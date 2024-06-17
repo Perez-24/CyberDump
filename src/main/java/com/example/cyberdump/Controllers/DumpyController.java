@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class DumpyController {
 
-    //@Value("${secretparam}")
+    //@Value("${secretparam}"):q
+
+
     //private String secretparam;
 
     //private final UserInfoRepository userInfoRepository;

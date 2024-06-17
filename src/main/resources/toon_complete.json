@@ -1,0 +1,137 @@
+{
+  "Handle": "Lizzard",
+  "Role": "Fixer",
+  "Role Level": "4",
+  "Max_HP": "45",
+  "HP": "45",
+  "Armor": [
+    {"Body":"11"},
+    {"Head":"11"},
+    {"Shield": 0}
+    ],
+  "Outfit": ["Agent", "Personal Computer"],
+  "Fashion": ["Pimp fit, platform shoes, sick ass patterns, ful suit, hats with feathers, sunglasses"],
+  "Lifepath": {
+    "cultural_origins": "North American",
+    "personality": "Arrogant and Proud",
+    "clothing_style": "Pimp (Urban Flash)",
+    "hairstyle": "Fuck ass bob",
+    "value_most": "My word (A Pimp's only as good as their word",
+    "feelings_about_people": "Everyone is valuable",
+    "most_valued_person": "My hoes",
+    "valued_possession": "My cane",
+    "family_background": "Urban homeless",
+    "childhood_environment": "streets",
+    "family_crisis": "scattered by corpo",
+    "life_goals": "Build socialist army, do pimp shit"
+  },
+  "Weapons": [
+    {
+      "Name": "Heavy Pistol",
+      "weapon_class": "hvy_pstl",
+      "ROF": "2",
+      "Damage": "3d6",
+      "Ammo": "8",
+      "Reserve_Ammo": "50",
+      "mods": [],
+      "Relevant_Attack_Skill": "Handgun"
+    },
+    {
+      "Name": "Heavy Pimp Cane",
+      "weapon_class": "v_hvy_mlee",
+      "ROF": "2",
+      "Damage": "3d6",
+      "Ammo": "∞",
+      "Reserve_Ammo": "∞",
+      "mods": [],
+      "Relevant_Attack_Skill": "Melee"
+    },
+    {
+      "Name": "Pimp Hand Fu",
+      "weapon_class": "mrtal_rts",
+      "ROF": "2",
+      "Damage": "4d6",
+      "Ammo": "∞",
+      "Reserve_Ammo": "∞",
+      "mods": [],
+      "skills": [
+        {
+          "Shared Martial Arts Special Move": "Recovery - Whenever you use the Get Up action, you can attempt to beat a DV13 with the martial arts special move resolution. If you succeed, that Get Up action didn't cost an action",
+          "REQ": "No requirement: all martial art forms may use this move"
+        }
+      ],
+      "Relevant_Attack_Skill": "Martial Arts"
+    }
+  ],
+  "Stats": {
+    "INT": 6,
+    "REF": 5,
+    "DEX": 6,
+    "TECH": 5,
+    "COOL": 8,
+    "WILL": 6,
+    "LUCK": 7,
+    "MOVE": 6,
+    "BODY": 7,
+    "EMP": 6
+  },
+  "Skills": [
+    {
+      "Concentration": [2,6],
+      "Conceal/Reveal_Object" : [0,6],
+      "Lip Reading": [0,6],
+      "Perception": [2,6],
+      "Tracking": [6,0]
+    },
+    {
+      "Athletics": [2,6],
+      "Contortionist": [0,6],
+      "Dance": [0,6],
+      "Endurance": [0,6],
+      "Resist Torture/Drugs": [0,6],
+      "Stealth": [0,6]
+    },
+    {
+      "Drive Land Vehicle": [0,5],
+      "Pilot Air Vehicle": [0,5],
+      "Pilot Sea Vehicle": [0,5],
+      "Riding": [0,5]
+    },
+    {
+      "Accounting": [0,6],
+      "Animal Handling": [0,6],
+      "Bureaucracy": [0,6],
+      "Business": [6,6],
+      "Composition": [0,6],
+      "Criminology": [0,6],
+      "Cryptology": [0,6],
+      "Deduction": [0,6],
+      "Education": [0,6],
+      "Gamble": [0,6],
+      "Language": [
+        {
+          "Streetslang": [4,6]
+        }
+      ],
+      "Library Search": [0,6],
+      "Local Expert": [
+        {
+          "Your Home": [6,6]
+        }
+      ],
+      "Science": [],
+      "Tactics": [0,6],
+      "Wilderness Survival": [0,6]
+    },
+    {
+      "Brawling": [0,6],
+      "Evasion": [5,6],
+      "Martial Arts": [3,6],
+      "Melee Weapon": [0,6]
+    },
+    {
+      "Note_for_Eugenio": "Pick up from Performance Skills"
+    }
+  ]
+
+}
