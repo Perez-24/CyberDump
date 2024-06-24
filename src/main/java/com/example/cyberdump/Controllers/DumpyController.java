@@ -3,10 +3,10 @@ package com.example.cyberdump.Controllers;
 import com.example.cyberdump.Entities.Toons;
 import com.example.cyberdump.Repository.ToonsRepository;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
@@ -52,8 +52,33 @@ public class DumpyController {
         StringBuilder sb = new StringBuilder();
         String name = toon.getHandle();
 
-        return sb.append(name).append("\t\t").append(toon.getRole()).append(" ").append(toon.getRole_level()).append("\t\t").append("HP:" + toon.getHP()).toString();
+        return sb.append(name).append("\t\t").append(toon.getRole()).append(" ").append(toon.getRole_level()).append("\t\t").append("HP:" + toon.getHp()).toString();
 
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addToon", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newUser(@RequestBody Toons newToon) {
+        Toons savedToon = null;
+        ResponseEntity response = null;
+        try{
+            savedToon = toonsRepository.save(newToon);
+            if(savedToon.getHandle() != null){
+                response = ResponseEntity.status(HttpStatus.CREATED)
+                        .body("successful toon creation");
+            }
+        }
+        catch (Exception e){
+            response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("deez nuts occurred due to "+ e.getMessage() );
+        }
+
+//        System.out.println(newToon.getHandle());
+//        System.out.println(newToon.getRole());
+//        System.out.println(newToon.getRole_level());
+
+        return response;
+        //return newUser;
     }
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
