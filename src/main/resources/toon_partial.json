@@ -3,16 +3,5 @@
   "Role": "Fixer",
   "Role Level": "4",
   "Max_HP": "45",
-  "HP": "45",
-  "Armor": [
-    {
-      "Body": "11"
-    },
-    {
-      "Head": "11"
-    },
-    {
-      "Shield": 0
-    }
-  ]
+  "HP": "45"
 }

@@ -1,6 +1,8 @@
 package com.example.cyberdump.Controllers;
 
 import com.example.cyberdump.Entities.Toons;
+import com.example.cyberdump.Entities.ToonsLifepath;
+import com.example.cyberdump.Repository.ToonsLifepathRepository;
 import com.example.cyberdump.Repository.ToonsRepository;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -17,15 +19,18 @@ public class DumpyController {
     //@Value("${secretparam}"):q
 
     private final ToonsRepository toonsRepository;
+    private final ToonsLifepathRepository toonsLifepathRepository;
 
 
-    public DumpyController(ToonsRepository toonsRepository) {this.toonsRepository = toonsRepository;}
+
+    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository) {
+        this.toonsRepository = toonsRepository;
+        this.toonsLifepathRepository = toonsLifepathRepository;
+    }
 
 
 
     //private String secretparam;
-
-    //private final UserInfoRepository userInfoRepository;
 
 //    //public AuthController(UserInfoRepository userInfoRepository) {
 //        this.userInfoRepository = userInfoRepository;
@@ -67,6 +72,7 @@ public class DumpyController {
                 response = ResponseEntity.status(HttpStatus.CREATED)
                         .body("successful toon creation");
             }
+            //ToonsLifepath savedLifepath =
         }
         catch (Exception e){
             response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
@@ -79,6 +85,32 @@ public class DumpyController {
 
         return response;
         //return newUser;
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addLifepath", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newLifepath(@RequestBody ToonsLifepath newLifepath) {
+        ToonsLifepath savedLifepath = null;
+        ResponseEntity response = null;
+        try{
+            savedLifepath = toonsLifepathRepository.save(newLifepath);
+            if(savedLifepath.getToonId() != null){
+                response = ResponseEntity.status(HttpStatus.CREATED)
+                        .body("successful lifepath creation");
+            }
+           // ToonsLifepath savedLifepath =
+        }
+        catch (Exception e){
+            response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("deez nuts occurred due to "+ e.getMessage() );
+        }
+
+//        System.out.println(newToon.getHandle());
+//        System.out.println(newToon.getRole());
+//        System.out.println(newToon.getRole_level());
+
+        return response;
+
     }
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
