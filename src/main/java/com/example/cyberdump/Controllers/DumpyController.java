@@ -92,6 +92,7 @@ public class DumpyController {
     public ResponseEntity<String> newLifepath(@RequestBody ToonsLifepath newLifepath) {
         ToonsLifepath savedLifepath = null;
         ResponseEntity response = null;
+        //newLifepath.setToonId();
         try{
             savedLifepath = toonsLifepathRepository.save(newLifepath);
             if(savedLifepath.getToonId() != null){
