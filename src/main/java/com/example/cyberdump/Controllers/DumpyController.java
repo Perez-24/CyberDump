@@ -64,6 +64,7 @@ public class DumpyController {
     @CrossOrigin(origins = "http://127.0.0.1:5500")
     @PostMapping(value = "/addToon", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> newUser(@RequestBody Toons newToon) {
+        //put check here to ensure db doesn't have duplicates
         Toons savedToon = null;
         ResponseEntity response = null;
         try{
@@ -92,12 +93,13 @@ public class DumpyController {
     public ResponseEntity<String> newLifepath(@RequestBody ToonsLifepath newLifepath) {
         ToonsLifepath savedLifepath = null;
         ResponseEntity response = null;
-        //newLifepath.setToonId();
+        Toons toon = null;
         try{
+            // assumes toon was created, todo add if statement
+            newLifepath.setToonId(toonsRepository.findByHandleIgnoreCase(savedLifepath.getHandle()).getToonId());
             savedLifepath = toonsLifepathRepository.save(newLifepath);
-            if(savedLifepath.getToonId() != null){
-                response = ResponseEntity.status(HttpStatus.CREATED)
-                        .body("successful lifepath creation");
+            if(savedLifepath.getHandle() != null){
+                response = ResponseEntity.status(HttpStatus.CREATED).body("successful lifepath creation");
             }
            // ToonsLifepath savedLifepath =
         }

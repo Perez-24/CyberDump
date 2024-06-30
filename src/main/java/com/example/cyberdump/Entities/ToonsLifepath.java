@@ -8,6 +8,16 @@ public class ToonsLifepath {
 
     @Id
     private Long toonId;
+
+    public String getHandle() {
+        return handle;
+    }
+
+    public void setHandle(String handle) {
+        this.handle = handle;
+    }
+
+    private String handle;
     private String cultural_origins;
     private String languages;
     private String personality;
