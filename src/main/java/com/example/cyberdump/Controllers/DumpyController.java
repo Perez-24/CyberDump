@@ -51,8 +51,20 @@ public class DumpyController {
     }
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/IdByHandle/{handle}")
+    Long findIdByToonHandle(@PathVariable String handle) {
+        try {
+            Toons toon = toonsRepository.findByHandleIgnoreCase(handle);
+            return toon.getToonId();
+        }
+        catch (Exception e){
+            return (long) -99;
+        }
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
     @GetMapping("/handle/{handle}")
-    String one(@PathVariable String handle) {
+    String getHandle(@PathVariable String handle) {
         Toons toon = toonsRepository.findByHandleIgnoreCase(handle);
         StringBuilder sb = new StringBuilder();
         String name = toon.getHandle();
@@ -93,15 +105,16 @@ public class DumpyController {
     public ResponseEntity<String> newLifepath(@RequestBody ToonsLifepath newLifepath) {
         ToonsLifepath savedLifepath = null;
         ResponseEntity response = null;
-        Toons toon = null;
         try{
             // assumes toon was created, todo add if statement
-            newLifepath.setToonId(toonsRepository.findByHandleIgnoreCase(savedLifepath.getHandle()).getToonId());
+            newLifepath.setToonId(toonsRepository.findByHandleIgnoreCase(newLifepath.getHandle()).getToonId());
             savedLifepath = toonsLifepathRepository.save(newLifepath);
-            if(savedLifepath.getHandle() != null){
+            if(savedLifepath.getToonId() != null){
                 response = ResponseEntity.status(HttpStatus.CREATED).body("successful lifepath creation");
             }
-           // ToonsLifepath savedLifepath =
+            else{
+                response = ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Unable to create lifepath, toon does not exist");
+            }
         }
         catch (Exception e){
             response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
