@@ -51,6 +51,14 @@ public class DumpyController {
     }
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/getLifepathByHandle/{handle}")
+    ToonsLifepath getLifepathByHandle(@PathVariable String handle) {
+
+        return toonsLifepathRepository.findByHandleIgnoreCase(handle);
+        //.orElseThrow(() -> new UserNotFoundException(username));
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
     @GetMapping("/IdByHandle/{handle}")
     Long findIdByToonHandle(@PathVariable String handle) {
         try {
