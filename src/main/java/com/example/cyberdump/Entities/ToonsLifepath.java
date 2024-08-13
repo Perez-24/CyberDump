@@ -3,20 +3,11 @@ package com.example.cyberdump.Entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "CyberDB_toons_lifepaths")
+@Table(name = "toons_lifepaths")
 public class ToonsLifepath {
 
     @Id
     private Long toonId;
-
-    public String getHandle() {
-        return handle;
-    }
-
-    public void setHandle(String handle) {
-        this.handle = handle;
-    }
-
     private String handle;
     private String cultural_origins;
     private String languages;
@@ -39,6 +30,14 @@ public class ToonsLifepath {
     private String sweet_revenge;
     private String what_happened;
     private String life_goals;
+
+    public String getHandle() {
+        return handle;
+    }
+
+    public void setHandle(String handle) {
+        this.handle = handle;
+    }
 
     public String getLanguages() {
         return languages;

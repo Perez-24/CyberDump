@@ -23,7 +23,8 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.xerial:sqlite-jdbc:3.41.2.2")
 	implementation("org.hibernate.orm:hibernate-community-dialects:6.4.1.Final")
-
+	implementation("org.hibernate:hibernate-core:6.6.3.Final")
+	implementation("org.hibernate:hibernate-entitymanager:5.6.15.Final")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework:spring-webflux")

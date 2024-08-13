@@ -4,7 +4,6 @@ import com.example.cyberdump.Entities.Toons;
 import com.example.cyberdump.Entities.ToonsLifepath;
 import com.example.cyberdump.Repository.ToonsLifepathRepository;
 import com.example.cyberdump.Repository.ToonsRepository;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -13,10 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-
 public class DumpyController {
-
-    //@Value("${secretparam}"):q
 
     private final ToonsRepository toonsRepository;
     private final ToonsLifepathRepository toonsLifepathRepository;
@@ -63,7 +59,7 @@ public class DumpyController {
     Long findIdByToonHandle(@PathVariable String handle) {
         try {
             Toons toon = toonsRepository.findByHandleIgnoreCase(handle);
-            return toon.getToonId();
+            return toon.getToon_id();
         }
         catch (Exception e){
             return (long) -99;
@@ -115,7 +111,7 @@ public class DumpyController {
         ResponseEntity response = null;
         try{
             // assumes toon was created, todo add if statement
-            newLifepath.setToonId(toonsRepository.findByHandleIgnoreCase(newLifepath.getHandle()).getToonId());
+            newLifepath.setToonId(toonsRepository.findByHandleIgnoreCase(newLifepath.getHandle()).getToon_id());
             savedLifepath = toonsLifepathRepository.save(newLifepath);
             if(savedLifepath.getToonId() != null){
                 response = ResponseEntity.status(HttpStatus.CREATED).body("successful lifepath creation");

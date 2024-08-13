@@ -5,22 +5,23 @@ import jakarta.persistence.Id;
 
 
 @Entity
-@Table(name = "cyberDB_toons")
+@Table(name = "toons")
 public class Toons {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long toonId;
+    private Long toon_id;
     private String handle;
     private String role;
     private Integer role_level;
     private Integer max_hp;
     private Integer hp;
 
-    public Long getToonId() {
-        return toonId;
+    private Integer armor_id;
+
+    public Long getToon_id() {
+        return toon_id;
     }
-    public void setToonId(Long toonId) {
-        this.toonId = toonId;
+    public void setToon_id(Long toonId) {
+        this.toon_id = toonId;
     }
     public String getHandle() {
         return handle;
@@ -51,6 +52,14 @@ public class Toons {
     }
     public void setHp(Integer hp) {
         this.hp = hp;
+    }
+
+    public Integer getArmor_id() {
+        return armor_id;
+    }
+
+    public void setArmor_id(Integer armor_id) {
+        this.armor_id = armor_id;
     }
 
 

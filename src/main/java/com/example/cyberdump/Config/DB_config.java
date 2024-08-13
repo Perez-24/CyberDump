@@ -1,14 +1,14 @@
 package com.example.cyberdump.Config;
 
 import com.example.cyberdump.Repository.ToonsRepository;
+import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Configuration
+@EnableBatchProcessing
+
 public class DB_config {
 
     @Service
