@@ -9,4 +9,9 @@ import jakarta.persistence.Table;
 public class ToonsRoleBasedLifepathFixer {
     @Id
     private Long toon_id;
+    private String type_fixer;
+    private String partner_whois;
+    private String office_describe;
+    private String side_clients_whois;
+    private String gunning4u_whois;
 }
