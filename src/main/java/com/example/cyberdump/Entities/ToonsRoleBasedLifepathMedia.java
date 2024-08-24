@@ -9,9 +9,8 @@ import jakarta.persistence.Table;
 public class ToonsRoleBasedLifepathMedia {
     @Id
     private Long toon_id;
-    toon_id
-            media_type
-    work_how
-            ethics
-    stories_type_you_tell
+    private String media_type;
+    private Integer work_how;
+    private String ethics;
+    private String stories_type_you_tell;
 }
