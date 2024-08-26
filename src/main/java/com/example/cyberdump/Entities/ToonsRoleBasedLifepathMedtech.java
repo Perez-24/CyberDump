@@ -9,4 +9,11 @@ import jakarta.persistence.Table;
 public class ToonsRoleBasedLifepathMedtech {
     @Id
     private Long toon_id;
+            private String medtech_whatkind;
+    private String partner_whois;
+    private String workspace;
+    private String main_clients_whois;
+    private String supplies_whereget;
+
+
 }
