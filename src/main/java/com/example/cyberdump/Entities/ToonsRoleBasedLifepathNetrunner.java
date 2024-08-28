@@ -9,4 +9,10 @@ import jakarta.persistence.Table;
 public class ToonsRoleBasedLifepathNetrunner {
     @Id
     private Long toon_id;
+    private String what_kind_netrunner;
+    private String workspace;
+    private String partner_whois;
+    private String main_clients_whois;
+    private String programs_whereget;
+    private String gunning4u_whois;
 }
