@@ -9,10 +9,9 @@ import jakarta.persistence.Table;
 public class ToonsRoleBasedLifepathNomad {
     @Id
     private Long toon_id;
-    toon_id
-            pack_size
-    pack_type
-            job_for_pack
-    pack_philosophy
-            gunning4u_pack_whois
+    private String pack_size;
+    private Integer pack_type;
+    private String  job_for_pack;
+    private String pack_philosophy;
+    private String  gunning4u_pack_whois;
 }
