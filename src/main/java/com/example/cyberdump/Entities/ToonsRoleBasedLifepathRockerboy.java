@@ -10,10 +10,10 @@ public class ToonsRoleBasedLifepathRockerboy {
     @Id
     private Long toon_id;
     private String rockerboy_type;
-    private Integer where_did_you_perform;
-    private Integer are_you_group_or_solo;
-    private Integer were_you_once_in_a_group;
-    private Integer why_did_you_leave;
+    private String where_did_you_perform;
+    private String are_you_group_or_solo;
+    private String were_you_once_in_a_group;
+    private String why_did_you_leave;
 
     public Long getToon_id() {
         return toon_id;
