@@ -9,4 +9,8 @@ import jakarta.persistence.Table;
 public class ToonsRoleBasedLifepathSolo {
     @Id
     private Long toon_id;
+    private String what_kind_of_solo;
+    private String moral_compass;
+    private String operational_territory;
+    private String who_gunning_4u;
 }
