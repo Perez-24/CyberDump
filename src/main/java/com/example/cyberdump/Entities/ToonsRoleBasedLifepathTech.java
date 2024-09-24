@@ -13,6 +13,6 @@ public class ToonsRoleBasedLifepathTech {
             private String partner_whois;
     private String main_clients_whois;
             private String supplies_whereget;
-    private Integer gunning4u_whois;
+    private String gunning4u_whois;
 
 }
