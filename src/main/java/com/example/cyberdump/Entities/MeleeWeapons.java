@@ -6,7 +6,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "mle_wpns")
-public class ToonMeleeWeapons {
+public class MeleeWeapons {
 
     @Id
     private Long toon_id;

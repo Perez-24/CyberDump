@@ -5,8 +5,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "cyberdb_toon_range_wpns")
-public class ToonRangedWeapons {
+@Table(name = "range_wpns")
+public class RangedWeapons {
     @Id
     private Long toon_id;
     private Long wpn_id;
