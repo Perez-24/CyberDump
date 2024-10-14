@@ -12,4 +12,19 @@ public class NetrunnerPrograms {
     private Long program_id;
     private String programName;
 
+    public Long getProgram_id() {
+        return program_id;
+    }
+
+    public void setProgram_id(Long program_id) {
+        this.program_id = program_id;
+    }
+
+    public String getProgramName() {
+        return programName;
+    }
+
+    public void setProgramName(String programName) {
+        this.programName = programName;
+    }
 }
