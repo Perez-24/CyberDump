@@ -67,6 +67,14 @@ public class DumpyController {
     }
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/toonByHandle/{handle}")
+    Toons findToonbyHandle(@PathVariable String handle) {
+
+        Toons toon = toonsRepository.findByHandleIgnoreCase(handle);
+            return toon;
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
     @GetMapping("/handle/{handle}")
     String getHandle(@PathVariable String handle) {
         Toons toon = toonsRepository.findByHandleIgnoreCase(handle);
