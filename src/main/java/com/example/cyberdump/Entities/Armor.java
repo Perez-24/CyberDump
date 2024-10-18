@@ -5,44 +5,16 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "toon_armr")
+@Table(name = "armor")
 public class Armor {
 
     @Id
-    private Long toon_id;
-    private Integer head;
-    private Integer body;
-    private Integer shield;
-    public Long getToon_id() {
-        return toon_id;
-    }
+    private Long armor_id;
+    private String armor_type;
+    private Integer sp_max;
+    private Integer sp;
+    private String armor_penalty;
+    private Integer cost;
 
-    public void setToon_id(Long toon_id) {
-        this.toon_id = toon_id;
-    }
-
-    public Integer getHead() {
-        return head;
-    }
-
-    public void setHead(Integer head) {
-        this.head = head;
-    }
-
-    public Integer getBody() {
-        return body;
-    }
-
-    public void setBody(Integer body) {
-        this.body = body;
-    }
-
-    public Integer getShield() {
-        return shield;
-    }
-
-    public void setShield(Integer shield) {
-        this.shield = shield;
-    }
 
 }
