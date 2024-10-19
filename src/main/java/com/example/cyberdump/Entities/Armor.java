@@ -16,5 +16,51 @@ public class Armor {
     private String armor_penalty;
     private Integer cost;
 
+    public Long getArmor_id() {
+        return armor_id;
+    }
 
+    public void setArmor_id(Long armor_id) {
+        this.armor_id = armor_id;
+    }
+
+    public String getArmor_type() {
+        return armor_type;
+    }
+
+    public void setArmor_type(String armor_type) {
+        this.armor_type = armor_type;
+    }
+
+    public Integer getSp_max() {
+        return sp_max;
+    }
+
+    public void setSp_max(Integer sp_max) {
+        this.sp_max = sp_max;
+    }
+
+    public Integer getSp() {
+        return sp;
+    }
+
+    public void setSp(Integer sp) {
+        this.sp = sp;
+    }
+
+    public String getArmor_penalty() {
+        return armor_penalty;
+    }
+
+    public void setArmor_penalty(String armor_penalty) {
+        this.armor_penalty = armor_penalty;
+    }
+
+    public Integer getCost() {
+        return cost;
+    }
+
+    public void setCost(Integer cost) {
+        this.cost = cost;
+    }
 }
