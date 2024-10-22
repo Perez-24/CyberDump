@@ -5,7 +5,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "CyberDB_toons_rbl_lawman")
+@Table(name = "toons_rbl_lawman")
 public class ToonsRoleBasedLifepathLawman {
     @Id
     private Long toon_id;
