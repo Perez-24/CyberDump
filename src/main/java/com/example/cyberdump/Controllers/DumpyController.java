@@ -1,7 +1,9 @@
 package com.example.cyberdump.Controllers;
 
+import com.example.cyberdump.Entities.StreetDrugs;
 import com.example.cyberdump.Entities.Toons;
 import com.example.cyberdump.Entities.ToonsLifepath;
+import com.example.cyberdump.Repository.DrugsRepository;
 import com.example.cyberdump.Repository.ToonsLifepathRepository;
 import com.example.cyberdump.Repository.ToonsRepository;
 import org.springframework.http.HttpStatus;
@@ -15,13 +17,15 @@ import java.util.Optional;
 public class DumpyController {
 
     private final ToonsRepository toonsRepository;
+    private final DrugsRepository drugsRepository;
     private final ToonsLifepathRepository toonsLifepathRepository;
 
 
 
-    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository) {
+    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, DrugsRepository drugsRepository) {
         this.toonsRepository = toonsRepository;
         this.toonsLifepathRepository = toonsLifepathRepository;
+        this.drugsRepository = drugsRepository;
     }
 
 
@@ -98,6 +102,29 @@ public class DumpyController {
                         .body("successful toon creation");
             }
             //ToonsLifepath savedLifepath =
+        }
+        catch (Exception e){
+            response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("deez nuts occurred due to "+ e.getMessage() );
+        }
+
+//        System.out.println(newToon.getHandle());
+//        System.out.println(newToon.getRole());
+//        System.out.println(newToon.getRole_level());
+
+        return response;
+        //return newUser;
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addToon", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newDrug(@RequestBody StreetDrugs newDrug) {
+        StreetDrugs savedDrug = null;
+        ResponseEntity response = null;
+        try{
+            savedDrug = drugsRepository.save(newDrug);
+                response = ResponseEntity.status(HttpStatus.CREATED)
+                        .body("successful drug creation");
         }
         catch (Exception e){
             response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
