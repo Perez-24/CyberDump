@@ -117,7 +117,7 @@ public class DumpyController {
     }
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
-    @PostMapping(value = "/addToon", consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/addDrug", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> newDrug(@RequestBody StreetDrugs newDrug) {
         StreetDrugs savedDrug = null;
         ResponseEntity response = null;

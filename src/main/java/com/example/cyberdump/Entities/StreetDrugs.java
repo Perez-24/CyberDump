@@ -7,9 +7,7 @@ import jakarta.persistence.*;
 public class StreetDrugs {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.SEQUENCE)
-
-    private Long drug_id;
+    private Integer drug_id;
     private String drug_name;
     private Integer duration_hours;
     private Integer secondary_effect_dv;
@@ -21,11 +19,11 @@ public class StreetDrugs {
     private String secondary_effect_2;
     private String secondary_effect3;
 
-    public Long getDrug_id() {
+    public Integer getDrug_id() {
         return drug_id;
     }
 
-    public void setDrug_id(Long drug_id) {
+    public void setDrug_id(Integer drug_id) {
         this.drug_id = drug_id;
     }
 
