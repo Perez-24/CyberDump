@@ -176,6 +176,14 @@ public class DumpyController {
         return toonsList;
     }
 
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/getAllDrugs")
+    public Iterable<StreetDrugs> findAllDrugs() {
+
+        Iterable<StreetDrugs> drugList = this.drugsRepository.findAll();
+        return drugList;
+    }
+
 
 
 }

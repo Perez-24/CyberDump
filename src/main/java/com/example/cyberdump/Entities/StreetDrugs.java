@@ -17,7 +17,7 @@ public class StreetDrugs {
     private String primary_effect_3;
     private String secondary_effect_1;
     private String secondary_effect_2;
-    private String secondary_effect3;
+    private String secondary_effect_3;
 
     public Integer getDrug_id() {
         return drug_id;
@@ -99,11 +99,11 @@ public class StreetDrugs {
         this.secondary_effect_2 = secondary_effect_2;
     }
 
-    public String getSecondary_effect3() {
-        return secondary_effect3;
+    public String getSecondary_effect_3() {
+        return secondary_effect_3;
     }
 
-    public void setSecondary_effect3(String secondary_effect3) {
-        this.secondary_effect3 = secondary_effect3;
+    public void setSecondary_effect_3(String secondary_effect3) {
+        this.secondary_effect_3 = secondary_effect3;
     }
 }
