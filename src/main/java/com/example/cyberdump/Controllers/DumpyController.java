@@ -1,8 +1,10 @@
 package com.example.cyberdump.Controllers;
 
+import com.example.cyberdump.Entities.Armor;
 import com.example.cyberdump.Entities.StreetDrugs;
 import com.example.cyberdump.Entities.Toons;
 import com.example.cyberdump.Entities.ToonsLifepath;
+import com.example.cyberdump.Repository.ArmorRepository;
 import com.example.cyberdump.Repository.DrugsRepository;
 import com.example.cyberdump.Repository.ToonsLifepathRepository;
 import com.example.cyberdump.Repository.ToonsRepository;
@@ -19,13 +21,15 @@ public class DumpyController {
     private final ToonsRepository toonsRepository;
     private final DrugsRepository drugsRepository;
     private final ToonsLifepathRepository toonsLifepathRepository;
+    private final ArmorRepository armorRepository;
 
 
 
-    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, DrugsRepository drugsRepository) {
+    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, DrugsRepository drugsRepository, ArmorRepository armorRepository) {
         this.toonsRepository = toonsRepository;
         this.toonsLifepathRepository = toonsLifepathRepository;
         this.drugsRepository = drugsRepository;
+        this.armorRepository = armorRepository;
     }
 
 
@@ -131,12 +135,7 @@ public class DumpyController {
                     .body("deez nuts occurred due to "+ e.getMessage() );
         }
 
-//        System.out.println(newToon.getHandle());
-//        System.out.println(newToon.getRole());
-//        System.out.println(newToon.getRole_level());
-
         return response;
-        //return newUser;
     }
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
@@ -160,13 +159,12 @@ public class DumpyController {
                     .body("deez nuts occurred due to "+ e.getMessage() );
         }
 
-//        System.out.println(newToon.getHandle());
-//        System.out.println(newToon.getRole());
-//        System.out.println(newToon.getRole_level());
-
         return response;
 
     }
+
+
+    /* GET ALL ENDPOINTS */
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
     @GetMapping("/getAllToons")
@@ -182,6 +180,14 @@ public class DumpyController {
 
         Iterable<StreetDrugs> drugList = this.drugsRepository.findAll();
         return drugList;
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/getAllArmor")
+    public Iterable<Armor> findAllArmor() {
+
+        Iterable<Armor> armorList = this.armorRepository.findAll();
+        return armorList;
     }
 
 
