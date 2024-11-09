@@ -139,6 +139,24 @@ public class DumpyController {
     }
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addArmor", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newArmor(@RequestBody Armor newArmor) {
+        Armor savedArmor = null;
+        ResponseEntity response = null;
+        try{
+            savedArmor = armorRepository.save(newArmor);
+            response = ResponseEntity.status(HttpStatus.CREATED)
+                    .body("successful armor creation");
+        }
+        catch (Exception e){
+            response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("deez nuts occurred due to "+ e.getMessage() );
+        }
+
+        return response;
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
     @PostMapping(value = "/addLifepath", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> newLifepath(@RequestBody ToonsLifepath newLifepath) {
         ToonsLifepath savedLifepath = null;

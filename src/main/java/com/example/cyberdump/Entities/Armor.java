@@ -11,8 +11,9 @@ public class Armor {
     @Id
     private Long armor_id;
     private String armor_type;
+    private String armor_desc;
     private Integer sp_max;
-    private Integer sp;
+    private Integer sp_current;
     private String armor_penalty;
     private Integer cost;
 
@@ -32,6 +33,14 @@ public class Armor {
         this.armor_type = armor_type;
     }
 
+    public String getArmor_desc() {
+        return armor_desc;
+    }
+
+    public void setArmor_desc(String armor_desc) {
+        this.armor_desc = armor_desc;
+    }
+
     public Integer getSp_max() {
         return sp_max;
     }
@@ -40,12 +49,12 @@ public class Armor {
         this.sp_max = sp_max;
     }
 
-    public Integer getSp() {
-        return sp;
+    public Integer getSp_current() {
+        return sp_current;
     }
 
-    public void setSp(Integer sp) {
-        this.sp = sp;
+    public void setSp_current(Integer sp) {
+        this.sp_current = sp;
     }
 
     public String getArmor_penalty() {
