@@ -5,7 +5,7 @@ import com.example.cyberdump.Entities.StreetDrugs;
 import com.example.cyberdump.Entities.Toons;
 import com.example.cyberdump.Entities.ToonsLifepath;
 import com.example.cyberdump.Repository.ArmorRepository;
-import com.example.cyberdump.Repository.DrugsRepository;
+import com.example.cyberdump.Repository.StreetDrugsRepository;
 import com.example.cyberdump.Repository.ToonsLifepathRepository;
 import com.example.cyberdump.Repository.ToonsRepository;
 import org.springframework.http.HttpStatus;
@@ -19,16 +19,16 @@ import java.util.Optional;
 public class DumpyController {
 
     private final ToonsRepository toonsRepository;
-    private final DrugsRepository drugsRepository;
+    private final StreetDrugsRepository streetDrugsRepository;
     private final ToonsLifepathRepository toonsLifepathRepository;
     private final ArmorRepository armorRepository;
 
 
 
-    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, DrugsRepository drugsRepository, ArmorRepository armorRepository) {
+    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository) {
         this.toonsRepository = toonsRepository;
         this.toonsLifepathRepository = toonsLifepathRepository;
-        this.drugsRepository = drugsRepository;
+        this.streetDrugsRepository = streetDrugsRepository;
         this.armorRepository = armorRepository;
     }
 
@@ -126,7 +126,7 @@ public class DumpyController {
         StreetDrugs savedDrug = null;
         ResponseEntity response = null;
         try{
-            savedDrug = drugsRepository.save(newDrug);
+            savedDrug = streetDrugsRepository.save(newDrug);
                 response = ResponseEntity.status(HttpStatus.CREATED)
                         .body("successful drug creation");
         }
@@ -196,7 +196,7 @@ public class DumpyController {
     @GetMapping("/getAllDrugs")
     public Iterable<StreetDrugs> findAllDrugs() {
 
-        Iterable<StreetDrugs> drugList = this.drugsRepository.findAll();
+        Iterable<StreetDrugs> drugList = this.streetDrugsRepository.findAll();
         return drugList;
     }
 
