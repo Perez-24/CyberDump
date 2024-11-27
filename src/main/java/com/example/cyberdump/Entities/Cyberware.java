@@ -11,6 +11,12 @@ public class Cyberware {
     @Id
     private Long cyberware_id;
     private String cyberware_name;
+    private String cyberware_type;
+    private String install_type;
+    private String description;
+    private String cost;
+    private String HL;
+
 
     public Long getCyberware_id() {
         return cyberware_id;
