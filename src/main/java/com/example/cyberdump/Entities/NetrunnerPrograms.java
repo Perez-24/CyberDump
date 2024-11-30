@@ -11,6 +11,12 @@ public class NetrunnerPrograms {
     @Id
     private Long program_id;
     private String programName;
+    private String programClass;
+    private Integer ATK;
+    private Integer DEF;
+    private Integer REZ;
+    private String Effect;
+    private Integer cost;
 
     public Long getProgram_id() {
         return program_id;
