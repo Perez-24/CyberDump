@@ -33,4 +33,52 @@ public class NetrunnerPrograms {
     public void setProgramName(String programName) {
         this.programName = programName;
     }
+
+    public String getProgramClass() {
+        return programClass;
+    }
+
+    public void setProgramClass(String programClass) {
+        this.programClass = programClass;
+    }
+
+    public Integer getATK() {
+        return ATK;
+    }
+
+    public void setATK(Integer ATK) {
+        this.ATK = ATK;
+    }
+
+    public Integer getDEF() {
+        return DEF;
+    }
+
+    public void setDEF(Integer DEF) {
+        this.DEF = DEF;
+    }
+
+    public Integer getREZ() {
+        return REZ;
+    }
+
+    public void setREZ(Integer REZ) {
+        this.REZ = REZ;
+    }
+
+    public String getEffect() {
+        return Effect;
+    }
+
+    public void setEffect(String effect) {
+        Effect = effect;
+    }
+
+    public Integer getCost() {
+        return cost;
+    }
+
+    public void setCost(Integer cost) {
+        this.cost = cost;
+    }
 }
