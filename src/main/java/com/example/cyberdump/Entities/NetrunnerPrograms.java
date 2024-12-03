@@ -5,7 +5,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "cyberware")
+@Table(name = "programs")
 public class NetrunnerPrograms {
 
     @Id
