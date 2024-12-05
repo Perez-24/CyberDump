@@ -1,18 +1,13 @@
 package com.example.cyberdump.Controllers;
 
-import com.example.cyberdump.Entities.Armor;
-import com.example.cyberdump.Entities.StreetDrugs;
-import com.example.cyberdump.Entities.Toons;
-import com.example.cyberdump.Entities.ToonsLifepath;
-import com.example.cyberdump.Repository.ArmorRepository;
-import com.example.cyberdump.Repository.StreetDrugsRepository;
-import com.example.cyberdump.Repository.ToonsLifepathRepository;
-import com.example.cyberdump.Repository.ToonsRepository;
+import com.example.cyberdump.Entities.*;
+import com.example.cyberdump.Repository.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -22,14 +17,18 @@ public class DumpyController {
     private final StreetDrugsRepository streetDrugsRepository;
     private final ToonsLifepathRepository toonsLifepathRepository;
     private final ArmorRepository armorRepository;
+    private final SkillsRepository skillsRepository;
+    private final SkillTypesRepository skillTypesRepository;
 
 
 
-    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository) {
+    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository, SkillsRepository skillsRepository, SkillTypesRepository skillTypesRepository) {
         this.toonsRepository = toonsRepository;
         this.toonsLifepathRepository = toonsLifepathRepository;
         this.streetDrugsRepository = streetDrugsRepository;
         this.armorRepository = armorRepository;
+        this.skillsRepository = skillsRepository;
+        this.skillTypesRepository = skillTypesRepository;
     }
 
 
@@ -136,6 +135,34 @@ public class DumpyController {
         }
 
         return response;
+    }
+
+        @CrossOrigin(origins = "http://127.0.0.1:5500")
+        @PostMapping(value = "/addSkillType", consumes = MediaType.APPLICATION_JSON_VALUE)
+        public ResponseEntity<String> newSkillType(@RequestBody List<SkillTypes>  newSkillType) {
+            ResponseEntity response = null;
+            try{
+                skillTypesRepository.saveAll(newSkillType);
+                return ResponseEntity.status(HttpStatus.CREATED).body("successful skill Type creation");
+            }
+            catch (Exception e){
+                return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("deez nuts occurred due to "+ e.getMessage() );
+            }
+
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addSkills", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newSkills(@RequestBody List<Skills>  newSkills) {
+        ResponseEntity response = null;
+        try{
+            skillsRepository.saveAll(newSkills);
+            return ResponseEntity.status(HttpStatus.CREATED).body("successful skill creation");
+        }
+        catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("deez nuts occurred due to "+ e.getMessage() );
+        }
+
     }
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
