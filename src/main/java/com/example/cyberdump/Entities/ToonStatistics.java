@@ -22,6 +22,9 @@ public class ToonStatistics {
     private Integer dex_score;
     private Integer move_score;
 
+    private Integer derived_hp;
+    private Integer derived_humanity;
+
     public Long getToon_id() {
         return toon_id;
     }
@@ -108,5 +111,21 @@ public class ToonStatistics {
 
     public void setMove_score(Integer move_score) {
         this.move_score = move_score;
+    }
+
+    public Integer getDerived_hp() {
+        return derived_hp;
+    }
+
+    public void setDerived_hp(Integer derived_hp) {
+        this.derived_hp = derived_hp;
+    }
+
+    public Integer getDerived_humanity() {
+        return derived_humanity;
+    }
+
+    public void setDerived_humanity(Integer derived_humanity) {
+        this.derived_humanity = derived_humanity;
     }
 }
