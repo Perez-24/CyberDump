@@ -5,8 +5,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "skill_types")
-public class SkillTypes {
+@Table(name = "skill_categories")
+public class SkillCategories {
     @Id
     private Long skill_type_id;
     private String skill_type_name;

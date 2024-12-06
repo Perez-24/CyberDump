@@ -18,17 +18,17 @@ public class DumpyController {
     private final ToonsLifepathRepository toonsLifepathRepository;
     private final ArmorRepository armorRepository;
     private final SkillsRepository skillsRepository;
-    private final SkillTypesRepository skillTypesRepository;
+    private final SkillCategoriesRepository skillCategoriesRepository;
 
 
 
-    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository, SkillsRepository skillsRepository, SkillTypesRepository skillTypesRepository) {
+    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository, SkillsRepository skillsRepository, SkillCategoriesRepository skillCategoriesRepository) {
         this.toonsRepository = toonsRepository;
         this.toonsLifepathRepository = toonsLifepathRepository;
         this.streetDrugsRepository = streetDrugsRepository;
         this.armorRepository = armorRepository;
         this.skillsRepository = skillsRepository;
-        this.skillTypesRepository = skillTypesRepository;
+        this.skillCategoriesRepository = skillCategoriesRepository;
     }
 
 
@@ -139,10 +139,10 @@ public class DumpyController {
 
         @CrossOrigin(origins = "http://127.0.0.1:5500")
         @PostMapping(value = "/addSkillType", consumes = MediaType.APPLICATION_JSON_VALUE)
-        public ResponseEntity<String> newSkillType(@RequestBody List<SkillTypes>  newSkillType) {
+        public ResponseEntity<String> newSkillCategory(@RequestBody List<SkillCategories>  newSkillType) {
             ResponseEntity response = null;
             try{
-                skillTypesRepository.saveAll(newSkillType);
+                skillCategoriesRepository.saveAll(newSkillType);
                 return ResponseEntity.status(HttpStatus.CREATED).body("successful skill Type creation");
             }
             catch (Exception e){
