@@ -1,0 +1,47 @@
+[
+  {
+    "skill_category_id": 0,
+    "skill_category_name": "Awareness",
+    "skill_category_desc": "Your awareness of your environment, noticing clues, etc."
+  },
+  {
+    "skill_category_id": 1,
+    "skill_category_name": "Body",
+    "skill_category_desc": "The use of Skills involving physical tasks, feats of strength, endurance, and other physical attributes."
+  },
+  {
+    "skill_category_id": 2,
+    "skill_category_name": "Control",
+    "skill_category_desc": "The use of Skills involving controlling vehicles or riding animals."
+  },
+  {
+    "skill_category_id": 3,
+    "skill_category_name": "Education",
+    "skill_category_desc": "Knowledge and training based on formal education/schooling."
+  },
+  {
+    "skill_category_id": 4,
+    "skill_category_name": "Fighting",
+    "skill_category_desc": "The ability to fight in hand-to-hand combat, or with a melee weapon."
+  },
+  {
+    "skill_category_id": 5,
+    "skill_category_name": "Performance",
+    "skill_category_desc": "Training in acting, musicianship, special effects, makeup, or other stage crafts."
+  },
+  {
+    "skill_category_id": 6,
+    "skill_category_name": "Ranged Weapon",
+    "skill_category_desc": "Skills in using a ranged weapon, such as a gun or a bow."
+  },
+  {
+    "skill_category_id": 7,
+    "skill_category_name": "Social Skills",
+    "skill_category_desc": "Your abilities to blend in, avoid social blunders, and to show style and grace. Also, your ability to convince others through social adeptness."
+  },
+  {
+    "skill_category_id": 8,
+    "skill_category_name": "Technique",
+    "skill_category_desc": "Trained vocational Skills and craftsmanship abilities."
+  }
+]

@@ -19,16 +19,18 @@ public class DumpyController {
     private final ArmorRepository armorRepository;
     private final SkillsRepository skillsRepository;
     private final SkillCategoriesRepository skillCategoriesRepository;
+    private final StatisticRepository statisticRepository;
 
 
 
-    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository, SkillsRepository skillsRepository, SkillCategoriesRepository skillCategoriesRepository) {
+    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository, SkillsRepository skillsRepository, SkillCategoriesRepository skillCategoriesRepository, StatisticRepository statisticRepository) {
         this.toonsRepository = toonsRepository;
         this.toonsLifepathRepository = toonsLifepathRepository;
         this.streetDrugsRepository = streetDrugsRepository;
         this.armorRepository = armorRepository;
         this.skillsRepository = skillsRepository;
         this.skillCategoriesRepository = skillCategoriesRepository;
+        this.statisticRepository = statisticRepository;
     }
 
 
@@ -138,7 +140,7 @@ public class DumpyController {
     }
 
         @CrossOrigin(origins = "http://127.0.0.1:5500")
-        @PostMapping(value = "/addSkillType", consumes = MediaType.APPLICATION_JSON_VALUE)
+        @PostMapping(value = "/addSkillCategory", consumes = MediaType.APPLICATION_JSON_VALUE)
         public ResponseEntity<String> newSkillCategory(@RequestBody List<SkillCategories>  newSkillType) {
             ResponseEntity response = null;
             try{
@@ -148,6 +150,20 @@ public class DumpyController {
             catch (Exception e){
                 return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("deez nuts occurred due to "+ e.getMessage() );
             }
+
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addStatistic", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newStatistic(@RequestBody List<Statistics>  newStatistic) {
+        ResponseEntity response = null;
+        try{
+            statisticRepository.saveAll(newStatistic);
+            return ResponseEntity.status(HttpStatus.CREATED).body("successful statistic creation");
+        }
+        catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("deez nuts occurred due to "+ e.getMessage() );
+        }
 
     }
 

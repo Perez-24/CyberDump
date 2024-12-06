@@ -1,0 +1,72 @@
+[
+  {
+    "statistic_id": 0,
+    "statistic_name": "Intelligence",
+    "statistic_abbv": "INT",
+    "statistic_group": "Mental",
+    "statistic_desc":"How generally bright you are. As a rule, this is more than sheer intelligence, but also includes cleverness, awareness, perception, and your ability to learn."
+  },
+  {
+    "statistic_id": 1,
+    "statistic_name": "Willpower",
+    "statistic_abbv": "WILL",
+    "statistic_group": "Mental",
+    "statistic_desc":"Your determination and ability to face danger and/or stress. This STAT also represents your courage and ability to survive longterm privation. This STAT is important for determining how much damage you can take."
+  },
+  {
+    "statistic_id": 2,
+    "statistic_name": "Cool",
+    "statistic_abbv": "COOL",
+    "statistic_group": "Mental",
+    "statistic_desc":"Your ability to impress and influence people through your character and charisma; how well you get along with others; how you interact in social situations. "
+  },
+  {
+    "statistic_id": 3,
+    "statistic_name": "Empathy",
+    "statistic_abbv": "EMP",
+    "statistic_group": "Mental",
+    "statistic_desc":"Your ability to relate to and care for others, and take others into consideration. Particularly important as it offsets the effects of cyberpsychosis, a dangerous mental illness common in the Dark Future."
+  },
+  {
+    "statistic_id": 4,
+    "statistic_name": "Technique",
+    "statistic_abbv": "TECH",
+    "statistic_group": "Combat",
+    "statistic_desc":"Your ability to manipulate tools or instruments. This is not the same as Reflexes, inasmuch as this covers the knack of using tools. One Character might have a high Technique but might not be able to fence or juggle. On the other hand, another might have high Reflexes, but might not be able to rewire a computer or hot-wire a car."
+  },
+  {
+    "statistic_id": 5,
+    "statistic_name": "Reflexes",
+    "statistic_abbv": "REF",
+    "statistic_group": "Combat",
+    "statistic_desc":"Your response time and coordination, as used in aiming, throwing, juggling, etc. A stage magician, for example, would have a high Reflex STAT. Most importantly, this is the STAT that affects your ability to hit things with ranged weapons."
+  },
+  {
+    "statistic_id": 6,
+    "statistic_name": "Luck",
+    "statistic_abbv": "LUCK",
+    "statistic_group": "Fortune",
+    "statistic_desc":"How the gods of chance see you. With a high enough Luck, you can tip the scales in your favor. In a game mechanics sense, you can apply points from this STAT to offset die rolls in your favor. However, this pool of points only refills at the beginning of the next session."
+  },
+  {
+    "statistic_id": 7,
+    "statistic_name": "Body",
+    "statistic_abbv": "BODY",
+    "statistic_group": "Physical",
+    "statistic_desc":"Your size, toughness, and ability to stay alive and conscious due to physical mass, structure, or other qualities. This STAT is important for determining how much damage you can take."
+  },
+  {
+    "statistic_id": 8,
+    "statistic_name": "Dexterity",
+    "statistic_abbv": "DEX",
+    "statistic_group": "Physical",
+    "statistic_desc":"Your overall physical competence, as it pertains to balancing, leaping, jumping, combat, and other athletic activities. A gymnast would have a high Dexterity. Most importantly, this is the STAT that affects your ability to hit things with melee weapons and can help you dodge attacks."
+  },
+  {
+    "statistic_id": 9,
+    "statistic_name": "Movement",
+    "statistic_abbv": "MOVE",
+    "statistic_group": "Physical",
+    "statistic_desc":"Your speed of movement: running, leaping, swimming, etc."
+  }
+]
