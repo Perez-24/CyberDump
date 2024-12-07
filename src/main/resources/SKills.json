@@ -2,386 +2,388 @@
   {
     "skill_id": "0",
     "skill_name": "Concentration",
+    "skill_affiliated_statistic_id": 1,
     "skill_desc": "Skill of focus and mental control, encompassing feats of memory, recall, ignoring distractions, and physiological mastery.",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "1",
     "skill_name": "Conceal/Reveal Object",
+    "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill for hiding objects and finding objects that have been hidden. This is the Skill used for concealing weapons under clothing and detecting concealed weapons.",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "2",
     "skill_name": "Lip Reading",
     "skill_desc": " Skill of reading someone's lips to tell what they are saying.",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "3",
     "skill_name": "Perception",
     "skill_desc": "Skill of spotting hidden things like clues, traps, and people using the Stealth Skill, but not objects hidden with the Conceal/Reveal Object Skill.",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   },
   {
     "skill_id": "0",
     "skill_name": "",
     "skill_desc": "",
-    "skill_type": 0,
+    "skill_category_id": 0,
     "is_hard": 0
   }
 

@@ -251,6 +251,22 @@ public class DumpyController {
         return armorList;
     }
 
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/getAllStatistics")
+    public Iterable<Statistics> findAllStatistics() {
+
+        Iterable<Statistics> statList = this.statisticRepository.findAll();
+        return statList;
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/getAllSkillCategories")
+    public Iterable<SkillCategories> findAllSkillCategories() {
+
+        Iterable<SkillCategories> scList = this.skillCategoriesRepository.findAll();
+        return scList;
+    }
+
 
 
 }

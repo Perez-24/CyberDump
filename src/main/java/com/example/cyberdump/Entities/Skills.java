@@ -11,9 +11,8 @@ public class Skills {
     private Long skill_id;
     private String skill_name;
     private String skill_desc;
-
-    private Integer skill_statistic;
-    private Integer skill_category;
+    private Integer skill_affiliated_statistic_id;
+    private Integer skill_category_id;
     private Integer is_hard;
 
     public Long getSkill_id() {
@@ -49,19 +48,19 @@ public class Skills {
         this.is_hard = is_hard;
     }
 
-    public Integer getSkill_statistic() {
-        return skill_statistic;
+    public Integer getSkill_affiliated_statistic_id() {
+        return skill_affiliated_statistic_id;
     }
 
-    public void setSkill_statistic(Integer skill_statistic) {
-        this.skill_statistic = skill_statistic;
+    public void setSkill_affiliated_statistic_id(Integer skill_statistic) {
+        this.skill_affiliated_statistic_id = skill_statistic;
     }
 
-    public Integer getSkill_category() {
-        return skill_category;
+    public Integer getSkill_category_id() {
+        return skill_category_id;
     }
 
-    public void setSkill_category(Integer skill_category) {
-        this.skill_category = skill_category;
+    public void setSkill_category_id(Integer skill_category) {
+        this.skill_category_id = skill_category;
     }
 }
