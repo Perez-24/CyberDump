@@ -56,6 +56,21 @@ public class DumpyController {
     }
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/skillID/{skillId}")
+    Optional<Skills> getSkillById(@PathVariable Integer skillId) {
+
+        return skillsRepository.findById(skillId);
+        //.orElseThrow(() -> new UserNotFoundException(username));
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/statisticID/{statisticId}")
+    Optional<Statistics> getStatisticById(@PathVariable Integer statisticId) {
+
+        return statisticRepository.findById(statisticId);
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
     @GetMapping("/getLifepathByHandle/{handle}")
     ToonsLifepath getLifepathByHandle(@PathVariable String handle) {
 
