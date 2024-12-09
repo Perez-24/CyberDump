@@ -1,8 +1,8 @@
 [
   {
     "skill_id": "0",
-    "skill_name_pretty": "Concentration",
-
+    "skill_name": "Concentration",
+    "skill_name_toon_link": "concentration_score",
     "skill_affiliated_statistic_id": 1,
     "skill_desc": "Skill of focus and mental control, encompassing feats of memory, recall, ignoring distractions, and physiological mastery.",
     "skill_category_id": 0,
@@ -10,7 +10,8 @@
   },
   {
     "skill_id": "1",
-    "skill_name_pretty": "Conceal/Reveal Object",
+    "skill_name": "Conceal/Reveal Object",
+    "skill_name_toon_link": "conceal_reveal_object_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill for hiding objects and finding objects that have been hidden. This is the Skill used for concealing weapons under clothing and detecting concealed weapons.",
     "skill_category_id": 0,
@@ -18,7 +19,8 @@
   },
   {
     "skill_id": "2",
-    "skill_name_pretty": "Lip Reading",
+    "skill_name": "Lip Reading",
+    "skill_name_toon_link": "lip_reading_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": " Skill of reading someone's lips to tell what they are saying.",
     "skill_category_id": 0,
@@ -26,7 +28,8 @@
   },
   {
     "skill_id": "3",
-    "skill_name_pretty": "Perception",
+    "skill_name": "Perception",
+    "skill_name_toon_link": "perception_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill of spotting hidden things like clues, traps, and people using the Stealth Skill, but not objects hidden with the Conceal/Reveal Object Skill.",
     "skill_category_id": 0,
@@ -34,7 +37,8 @@
   },
   {
     "skill_id": "4",
-    "skill_name_pretty": "Tracking",
+    "skill_name": "Tracking",
+    "skill_name_toon_link": "tracking_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill of following a trail by observing tracks and other clues left behind.",
     "skill_category_id": 0,
@@ -42,7 +46,8 @@
   },
   {
     "skill_id": "5",
-    "skill_name_pretty": "Athletics",
+    "skill_name": "Athletics",
+    "skill_name_toon_link": "athletics_score",
     "skill_affiliated_statistic_id": 8,
     "skill_desc": "Skill of jumping, climbing, throwing, swimming, lifting weights, etc.",
     "skill_category_id": 1,
@@ -50,7 +55,8 @@
   },
   {
     "skill_id": "6",
-    "skill_name_pretty": "Contortionist",
+    "skill_name": "Contortionist",
+    "skill_name_toon_link": "contortionist_score",
     "skill_affiliated_statistic_id": 8,
     "skill_desc": "Skill of manipulating your body to get out of handcuffs or other bindings and to fit yourself into otherwise inaccessible places or spaces.",
     "skill_category_id": 1,
@@ -58,7 +64,8 @@
   },
   {
     "skill_id": "7",
-    "skill_name_pretty": "Dance",
+    "skill_name": "Dance",
+    "skill_name_toon_link": "dance_score",
     "skill_affiliated_statistic_id": 8,
     "skill_desc": "Skill of dancing at a professional level.",
     "skill_category_id": 1,
@@ -66,7 +73,8 @@
   },
   {
     "skill_id": "8",
-    "skill_name_pretty": "Endurance",
+    "skill_name": "Endurance",
+    "skill_name_toon_link": "endurance_score",
     "skill_affiliated_statistic_id": 1,
     "skill_desc": "Skill of withstanding harsh environmental conditions and hardship.",
     "skill_category_id": 1,
@@ -74,7 +82,8 @@
   },
   {
     "skill_id": "9",
-    "skill_name_pretty": "Resist Torture/Drugs",
+    "skill_name": "Resist Torture/Drugs",
+    "skill_name_toon_link": "resist_torture_drugs_score",
     "skill_affiliated_statistic_id": 1,
     "skill_desc": "Skill of resisting painful effects including interrogation, torture, and drugs",
     "skill_category_id": 1,
@@ -82,7 +91,8 @@
   },
   {
     "skill_id": "10",
-    "skill_name_pretty": "Stealth",
+    "skill_name": "Stealth",
+    "skill_name_toon_link": "stealth_score",
     "skill_affiliated_statistic_id": 8,
     "skill_desc": "Skill of moving quietly, hiding, doing an Action discreetly, or otherwise evading detection. Other Characters can try to find you with their Perception Skill.",
     "skill_category_id": 1,
@@ -90,7 +100,8 @@
   },
   {
     "skill_id": "11",
-    "skill_name_pretty": "Drive Land Vehicle",
+    "skill_name": "Drive Land Vehicle",
+    "skill_name_toon_link": "drive_land_vehicle_score",
     "skill_affiliated_statistic_id": 5,
     "skill_desc": "Skill of driving and maneuvering land vehicles.",
     "skill_category_id": 2,
@@ -98,7 +109,8 @@
   },
   {
     "skill_id": "12",
-    "skill_name_pretty": "Pilot Air Vehicle (x2)",
+    "skill_name": "Pilot Air Vehicle (x2)",
+    "skill_name_toon_link": "pilot_air_vehicle_score",
     "skill_affiliated_statistic_id": 5,
     "skill_desc": "Skill of piloting and maneuvering air vehicles.",
     "skill_category_id": 2,
@@ -106,7 +118,8 @@
   },
   {
     "skill_id": "13",
-    "skill_name_pretty": "Pilot Sea Vehicle",
+    "skill_name": "Pilot Sea Vehicle",
+    "skill_name_toon_link": "pilot_sea_vehicle_score",
     "skill_affiliated_statistic_id": 5,
     "skill_desc": "Skill of piloting and maneuvering sea vehicles.",
     "skill_category_id": 2,
@@ -114,7 +127,8 @@
   },
   {
     "skill_id": "14",
-    "skill_name_pretty": "Riding",
+    "skill_name": "Riding",
+    "skill_name_toon_link": "riding_score",
     "skill_affiliated_statistic_id": 5,
     "skill_desc": "Skill of riding a living creature trained for the purpose.",
     "skill_category_id": 2,
@@ -122,7 +136,8 @@
   },
   {
     "skill_id": "15",
-    "skill_name_pretty": "Accounting",
+    "skill_name": "Accounting",
+    "skill_name_toon_link": "accounting_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill of balancing books, creating false books and identifying them, juggling numbers, creating budgets, and handling day to day business operations",
     "skill_category_id": 3,
@@ -130,7 +145,8 @@
   },
   {
     "skill_id": "16",
-    "skill_name_pretty": "Animal Handling",
+    "skill_name": "Animal Handling",
+    "skill_name_toon_link": "animal_handling_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill of handling, training, and caring for animals.",
     "skill_category_id": 3,
@@ -138,7 +154,8 @@
   },
   {
     "skill_id": "17",
-    "skill_name_pretty": "Bureaucracy",
+    "skill_name": "Bureaucracy",
+    "skill_name_toon_link": "bureaucracy_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill for dealing with bureaucrats, knowing who to talk to in a bureaucracy, how to reach them, and how to extract information from bureaucracies",
     "skill_category_id": 3,
@@ -146,7 +163,8 @@
   },
   {
     "skill_id": "18",
-    "skill_name_pretty": "Business",
+    "skill_name": "Business",
+    "skill_name_toon_link": "business_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill regarding knowledge of basic business practices, laws of supply and demand, employee management, procurement, sales, marketing.",
     "skill_category_id": 3,
@@ -154,7 +172,8 @@
   },
   {
   "skill_id": "19",
-  "skill_name_pretty": "Composition",
+  "skill_name": "Composition",
+    "skill_name_toon_link": "composition_score",
   "skill_affiliated_statistic_id": 0,
   "skill_desc": "Skill of professionally writing songs, articles, or stories.",
   "skill_category_id": 3,
@@ -162,7 +181,8 @@
 },
   {
   "skill_id": "20",
-  "skill_name_pretty": "Criminology",
+  "skill_name": "Criminology",
+    "skill_name_toon_link": "criminology_score",
   "skill_affiliated_statistic_id": 0,
   "skill_desc": "Skill for looking for clues by dusting for fingerprints, doing ballistic tests, examining evidence, and searching through police records and files.",
   "skill_category_id": 3,
@@ -170,7 +190,8 @@
 },
   {
   "skill_id": "21",
-  "skill_name_pretty": "Cryptography",
+  "skill_name": "Cryptography",
+    "skill_name_toon_link": "cryptography_score",
   "skill_affiliated_statistic_id": 0,
   "skill_desc": "Skill of encrypting and decoding messages.",
   "skill_category_id": 3,
@@ -178,7 +199,8 @@
 },
   {
     "skill_id": "22",
-    "skill_name_pretty": "Deduction",
+    "skill_name": "Deduction",
+    "skill_name_toon_link": "deduction_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill of taking several clues and leaping to a non-obvious conclusion or medical diagnosis.",
     "skill_category_id": 3,
@@ -186,7 +208,8 @@
   },
   {
     "skill_id": "23",
-    "skill_name_pretty": "Education",
+    "skill_name": "Education",
+    "skill_name_toon_link": "education_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill of general knowledge, equivalent to a basic school education, allowing you to know how to read, write, use basic math, and know enough history to get by.",
     "skill_category_id": 3,
@@ -194,7 +217,8 @@
   },
   {
     "skill_id": "24",
-    "skill_name_pretty": "Gamble",
+    "skill_name": "Gamble",
+    "skill_name_toon_link": "gamble_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill of knowing how to figure odds and play games of chance successfully",
     "skill_category_id": 3,
@@ -202,7 +226,8 @@
   },
   {
     "skill_id": "25",
-    "skill_name_pretty": "Language",
+    "skill_name": "Language",
+    "skill_name_toon_link": "language_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill of speaking a particular language. You must choose a specific language whenever you increase this Skill",
     "skill_category_id": 3,
@@ -210,7 +235,8 @@
   },
   {
     "skill_id": "26",
-    "skill_name_pretty": "Library Search",
+    "skill_name": "Library Search",
+    "skill_name_toon_link": "library_search_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill of using databases, Data Pools, libraries, and other compiled information sources to find facts.",
     "skill_category_id": 3,
@@ -218,7 +244,8 @@
   },
   {
     "skill_id": "27",
-    "skill_name_pretty": "Local Expert",
+    "skill_name": "Local Expert",
+    "skill_name_toon_link": "local_expert_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill of knowing a specific area well and knowing the agendas of its various factions, both political and criminal. You must choose a specific location whenever you increase this Skill, which cannot be any larger than a single neighborhood or community.",
     "skill_category_id": 3,
@@ -226,7 +253,8 @@
   },
   {
     "skill_id": "28",
-    "skill_name_pretty": "Science",
+    "skill_name": "Science",
+    "skill_name_toon_link": "science_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill for knowing how to design experiments, write scientific papers, test hypotheses, and discuss with other academics in a particular field of science. An area of study must be specified whenever this Skill is increased. Possible options include: Geology, Mathematics, Physics, Zoology, Anthropology, Biology, Chemistry, History, etc.",
     "skill_category_id": 3,
@@ -234,7 +262,8 @@
   },
   {
     "skill_id": "29",
-    "skill_name_pretty": "Tactics",
+    "skill_name": "Tactics",
+    "skill_name_toon_link": "tactics_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill of managing a large-scale battle effectively and efficiently. A Character with this Skill usually knows what must be done to direct a battle, and how an enemy force may react.",
     "skill_category_id": 3,
@@ -242,7 +271,8 @@
   },
   {
     "skill_id": "30",
-    "skill_name_pretty": "Wilderness Survival",
+    "skill_name": "Wilderness Survival",
+    "skill_name_toon_link": "wilderness_survival_score",
     "skill_affiliated_statistic_id": 0,
     "skill_desc": "Skill for knowing how to survive comfortably in the wilderness.",
     "skill_category_id": 3,
@@ -250,7 +280,8 @@
   },
   {
     "skill_id": "31",
-    "skill_name_pretty": "Brawling",
+    "skill_name": "Brawling",
+    "skill_name_toon_link": "brawling_score",
     "skill_affiliated_statistic_id": 8,
     "skill_desc": "Skill at fighting and grappling with brute strength.",
     "skill_category_id": 4,
@@ -258,7 +289,8 @@
   },
   {
     "skill_id": "32",
-    "skill_name_pretty": "Evasion",
+    "skill_name": "Evasion",
+    "skill_name_toon_link": "evasion_score",
     "skill_affiliated_statistic_id": 8,
     "skill_desc": "Skill for getting out of the way of someone attacking you in melee. A Character with REF 8 or higher can also use this Skill to dodge Ranged Attacks.",
     "skill_category_id": 4,
@@ -266,7 +298,8 @@
   },
   {
     "skill_id": "33",
-    "skill_name_pretty": "Martial Arts (x2)",
+    "skill_name": "Martial Arts (x2)",
+    "skill_name_toon_link": "martial_arts_score",
     "skill_affiliated_statistic_id": 8,
     "skill_desc": "Skill for fighting with a Martial Arts Form. Each time you increase this Skill you must choose in which form you are training. You can learn multiple forms, but you must do so separately. Possible options (Karate, Taekwondo, Judo, Aikido) can be found on pg. 178.",
     "skill_category_id": 4,
@@ -274,7 +307,8 @@
   },
   {
     "skill_id": "34",
-    "skill_name_pretty": "Melee Weapon",
+    "skill_name": "Melee Weapon",
+    "skill_name_toon_link": "melee_weapon_score",
     "skill_affiliated_statistic_id": 8,
     "skill_desc": "Skill for fighting with melee weapons.",
     "skill_category_id": 4,
@@ -282,7 +316,8 @@
   },
   {
     "skill_id": "35",
-    "skill_name_pretty": "Acting",
+    "skill_name": "Acting",
+    "skill_name_toon_link": "acting_score",
     "skill_affiliated_statistic_id": 2,
     "skill_desc": "Skill of assuming a role, disguising yourself as someone else, whether real or fictitious, and faking emotions and moods.",
     "skill_category_id": 5,
@@ -290,7 +325,8 @@
   },
   {
     "skill_id": "36",
-    "skill_name_pretty": "Play Instrument",
+    "skill_name": "Play Instrument",
+    "skill_name_toon_link": "play_instrument_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill of professionally playing a musical instrument. You can choose which instrument when you increase this Skill. Possible options include: singing, guitar, drums, violin, piano, etc.",
     "skill_category_id": 5,
@@ -298,7 +334,8 @@
   },
   {
     "skill_id": "37",
-    "skill_name_pretty": "Archery",
+    "skill_name": "Archery",
+    "skill_name_toon_link": "archery_score",
     "skill_affiliated_statistic_id": 5,
     "skill_desc": "Skill for accurately firing bolt- or arrow-launching projectile weapons.",
     "skill_category_id": 6,
@@ -306,7 +343,8 @@
   },
   {
     "skill_id": "38",
-    "skill_name_pretty": "Autofire (x2)",
+    "skill_name": "Autofire (x2)",
+    "skill_name_toon_link": "autofire_score",
     "skill_affiliated_statistic_id": 5,
     "skill_desc": "Skill for keeping a weapon's Autofire firing mode on target through recoil.",
     "skill_category_id": 6,
@@ -314,7 +352,8 @@
   },
   {
     "skill_id": "39",
-    "skill_name_pretty": "Handgun",
+    "skill_name": "Handgun",
+    "skill_name_toon_link": "handgun_score",
     "skill_affiliated_statistic_id": 5,
     "skill_desc": "Skill for accurately firing handheld projectile weapons such as pistols.",
     "skill_category_id": 6,
@@ -322,7 +361,8 @@
   },
   {
     "skill_id": "40",
-    "skill_name_pretty": "Heavy Weapons (x2)",
+    "skill_name": "Heavy Weapons (x2)",
+    "skill_name_toon_link": "heavy_weapons_score",
     "skill_affiliated_statistic_id": 5,
     "skill_desc": "Skill for accurately firing extremely large projectile weapons, including grenade and rocket launchers",
     "skill_category_id": 6,
@@ -330,7 +370,8 @@
   },
   {
     "skill_id": "41",
-    "skill_name_pretty": "Shoulder Arms",
+    "skill_name": "Shoulder Arms",
+    "skill_name_toon_link": "shoulder_arms_score",
     "skill_affiliated_statistic_id": 5,
     "skill_desc": "Skill for accurately firing shoulder-braced projectile weapons, including rifles and shotguns.",
     "skill_category_id": 6,
@@ -338,7 +379,8 @@
   },
   {
     "skill_id": "42",
-    "skill_name_pretty": "Bribery",
+    "skill_name": "Bribery",
+    "skill_name_toon_link": "bribery_score",
     "skill_affiliated_statistic_id": 2,
     "skill_desc": "Skill of knowing when to bribe someone, how to approach them, and how much to offer.",
     "skill_category_id": 7,
@@ -346,7 +388,8 @@
   },
   {
     "skill_id": "43",
-    "skill_name_pretty": "Conversation",
+    "skill_name": "Conversation",
+    "skill_name_toon_link": "conversation_score",
     "skill_affiliated_statistic_id": 3,
     "skill_desc": "Skill of extracting information from people without alerting them with careful conversation.",
     "skill_category_id": 7,
@@ -354,7 +397,8 @@
   },
   {
     "skill_id": "44",
-    "skill_name_pretty": "Human Perception",
+    "skill_name": "Human Perception",
+    "skill_name_toon_link": "human_perception_score",
     "skill_affiliated_statistic_id": 3,
     "skill_desc": "Skill of reading a person's facial expressions and body language to discern their emotional state and detect lies or deception.",
     "skill_category_id": 7,
@@ -362,7 +406,8 @@
   },
   {
     "skill_id": "45",
-    "skill_name_pretty": "Interrogation",
+    "skill_name": "Interrogation",
+    "skill_name_toon_link": "interrogation_score",
     "skill_affiliated_statistic_id": 2,
     "skill_desc": "Skill of forcibly extracting information from people.",
     "skill_category_id": 7,
@@ -370,7 +415,8 @@
   },
   {
     "skill_id": "46",
-    "skill_name_pretty": "Persuasion",
+    "skill_name": "Persuasion",
+    "skill_name_toon_link": "persuasion_score",
     "skill_affiliated_statistic_id": 2,
     "skill_desc": "Skill of convincing, persuading, or influencing individuals.",
     "skill_category_id": 7,
@@ -378,7 +424,8 @@
   },
   {
     "skill_id": "47",
-    "skill_name_pretty": "Personal Grooming",
+    "skill_name": "Personal Grooming",
+    "skill_name_toon_link": "personal_grooming_score",
     "skill_affiliated_statistic_id": 2,
     "skill_desc": "Skill of knowing proper grooming to maximize attractiveness.",
     "skill_category_id": 7,
@@ -386,7 +433,8 @@
   },
   {
     "skill_id": "48",
-    "skill_name_pretty": "Streetwise",
+    "skill_name": "Streetwise",
+    "skill_name_toon_link": "streetwise_score",
     "skill_affiliated_statistic_id": 2,
     "skill_desc": "Skill of making and using contacts to get illegal goods and contraband, talking to the criminal element, and avoiding bad situations in bad neighborhoods.",
     "skill_category_id": 7,
@@ -394,7 +442,8 @@
   },
   {
     "skill_id": "49",
-    "skill_name_pretty": "Trading",
+    "skill_name": "Trading",
+    "skill_name_toon_link": "trading_score",
     "skill_affiliated_statistic_id": 2,
     "skill_desc": "Skill of striking a good bargain with a merchant or customer.",
     "skill_category_id": 7,
@@ -402,7 +451,8 @@
   },
   {
     "skill_id": "50",
-    "skill_name_pretty": "Wardrobe & Style",
+    "skill_name": "Wardrobe & Style",
+    "skill_name_toon_link": "wardrobe_and_style_score",
     "skill_affiliated_statistic_id": 2,
     "skill_desc": "Skill of knowing the clothes to wear and when to wear them.",
     "skill_category_id": 7,
@@ -410,7 +460,8 @@
   },
   {
     "skill_id": "51",
-    "skill_name_pretty": "Air Vehicle Tech",
+    "skill_name": "Air Vehicle Tech",
+    "skill_name_toon_link": "air_vehicle_tech_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill of repairing and maintaining air vehicles.",
     "skill_category_id": 8,
@@ -418,7 +469,8 @@
   },
   {
     "skill_id": "52",
-    "skill_name_pretty": "Basic Tech",
+    "skill_name": "Basic Tech",
+    "skill_name_toon_link": "basic_tech_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill of identifying, understanding, and repairing simple electronic and mechanical devices and all other items not covered by another Technique Skill.",
     "skill_category_id": 8,
@@ -426,7 +478,8 @@
   },
   {
     "skill_id": "53",
-    "skill_name_pretty": "Cybertech",
+    "skill_name": "Cybertech",
+    "skill_name_toon_link": "cybertech_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill of identifying, understanding, and repairing cybernetics.",
     "skill_category_id": 8,
@@ -434,7 +487,8 @@
   },
   {
     "skill_id": "54",
-    "skill_name_pretty": "Demolitions (x2)",
+    "skill_name": "Demolitions (x2)",
+    "skill_name_toon_link": "demolitions_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill of setting and defusing explosives, and knowing how much explosive will accomplish a desired result.",
     "skill_category_id": 8,
@@ -442,7 +496,8 @@
   },
   {
     "skill_id": "55",
-    "skill_name_pretty": "Electronics/Security Tech (x2)",
+    "skill_name": "Electronics/Security Tech (x2)",
+    "skill_name_toon_link": "electronics_security_tech_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill of identifying, understanding, repairing, countering, and installing complex electronic devices, including: computers, cyberdecks, personal electronics, electronic security systems, bugs and tracers, pressure plates, laser tripwires, etc.",
     "skill_category_id": 8,
@@ -450,7 +505,8 @@
   },
   {
     "skill_id": "56",
-    "skill_name_pretty": "First Aid",
+    "skill_name": "First Aid",
+    "skill_name_toon_link": "first_aid_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill of applying medical treatments to a wounded person to treat the most common Critical Injuries and keep them from dying.",
     "skill_category_id": 8,
@@ -458,7 +514,8 @@
   },
   {
     "skill_id": "57",
-    "skill_name_pretty": "Forgery",
+    "skill_name": "Forgery",
+    "skill_name_toon_link": "forgery_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill of creating and detecting false documents and identification.",
     "skill_category_id": 8,
@@ -466,7 +523,8 @@
   },
   {
     "skill_id": "58",
-    "skill_name_pretty": "Land Vehicle Tech",
+    "skill_name": "Land Vehicle Tech",
+    "skill_name_toon_link": "land_vehicle_tech_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill of repairing and maintaining land vehicles.",
     "skill_category_id": 8,
@@ -474,7 +532,8 @@
   },
   {
     "skill_id": "59",
-    "skill_name_pretty": "Paint/Draw/Sculpt",
+    "skill_name": "Paint/Draw/Sculpt",
+    "skill_name_toon_link": "point_draw_sculpt_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill of producing professional paintings, drawings, or sculpture.",
     "skill_category_id": 8,
@@ -482,7 +541,8 @@
   },
   {
     "skill_id": "60",
-    "skill_name_pretty": "Paramedic (x2)",
+    "skill_name": "Paramedic (x2)",
+    "skill_name_toon_link": "paramedic_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill of applying medical treatments to a wounded person to treat all Critical Injuries not requiring Surgery and keep them from dying (Surgery is only available to Medtechs through their Role Ability, Medicine).",
     "skill_category_id": 8,
@@ -490,7 +550,8 @@
   },
   {
     "skill_id": "61",
-    "skill_name_pretty": "Photography/Film",
+    "skill_name": "Photography/Film",
+    "skill_name_toon_link": "photography_film_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill for producing photographs, videos, or braindances.",
     "skill_category_id": 8,
@@ -498,7 +559,8 @@
   },
   {
     "skill_id": "62",
-    "skill_name_pretty": "Pick Lock",
+    "skill_name": "Pick Lock",
+    "skill_name_toon_link": "pick_lock_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill for bypassing non-electronic locks.",
     "skill_category_id": 8,
@@ -506,7 +568,8 @@
   },
   {
     "skill_id": "63",
-    "skill_name_pretty": "Pick Pocket",
+    "skill_name": "Pick Pocket",
+    "skill_name_toon_link": "pick_pocket_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill for stealthily retrieving items secured on another person and shoplifting small items without being noticed.",
     "skill_category_id": 8,
@@ -514,7 +577,8 @@
   },
   {
     "skill_id": "64",
-    "skill_name_pretty": "Sea Vehicle Tech",
+    "skill_name": "Sea Vehicle Tech",
+    "skill_name_toon_link": "sea_vehicle_tech",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill of repairing and maintaining sea vehicles.",
     "skill_category_id": 8,
@@ -522,7 +586,8 @@
   },
   {
     "skill_id": "65",
-    "skill_name_pretty": "Weaponstech",
+    "skill_name": "Weaponstech",
+    "skill_name_toon_link": "weaponstech_score",
     "skill_affiliated_statistic_id": 4,
     "skill_desc": "Skill for repairing and maintaining weapons of all types.",
     "skill_category_id": 8,

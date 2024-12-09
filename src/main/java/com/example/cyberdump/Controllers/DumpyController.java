@@ -21,9 +21,12 @@ public class DumpyController {
     private final SkillCategoriesRepository skillCategoriesRepository;
     private final StatisticRepository statisticRepository;
 
+    private final ToonSkillRepository toonSkillRepository;
+    private final ToonStatisticsRepository toonStatisticsRepository;
 
 
-    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository, SkillsRepository skillsRepository, SkillCategoriesRepository skillCategoriesRepository, StatisticRepository statisticRepository) {
+
+    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository, SkillsRepository skillsRepository, SkillCategoriesRepository skillCategoriesRepository, StatisticRepository statisticRepository, ToonSkillRepository toonSkillRepository, ToonStatisticsRepository toonStatisticsRepository) {
         this.toonsRepository = toonsRepository;
         this.toonsLifepathRepository = toonsLifepathRepository;
         this.streetDrugsRepository = streetDrugsRepository;
@@ -31,6 +34,8 @@ public class DumpyController {
         this.skillsRepository = skillsRepository;
         this.skillCategoriesRepository = skillCategoriesRepository;
         this.statisticRepository = statisticRepository;
+        this.toonSkillRepository = toonSkillRepository;
+        this.toonStatisticsRepository = toonStatisticsRepository;
     }
 
 
@@ -76,6 +81,22 @@ public class DumpyController {
 
         return skillCategoriesRepository.findById(skillCategoryID);
     }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/toonSkill/{toonSkillID}")
+    Optional<ToonSkills> getToonSkillByID(@PathVariable Integer toonSkillID) {
+
+        return toonSkillRepository.findById(toonSkillID);
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/toonStatistic/{toonStatisticID}")
+    Optional<ToonStatistics> getToonStatisticByID(@PathVariable Integer toonStatisticID) {
+
+        return toonStatisticsRepository.findById(toonStatisticID);
+    }
+
+
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
     @GetMapping("/getLifepathByHandle/{handle}")
@@ -236,6 +257,42 @@ public class DumpyController {
             else{
                 response = ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Unable to create lifepath, toon does not exist");
             }
+        }
+        catch (Exception e){
+            response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("deez nuts occurred due to "+ e.getMessage() );
+        }
+
+        return response;
+
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addToonSkills", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newToonSkills(@RequestBody ToonSkills newToonSkills) {
+        ToonSkills savedToonSkills = null;
+        ResponseEntity response = null;
+        try{
+            savedToonSkills = toonSkillRepository.save(newToonSkills);
+                response = ResponseEntity.status(HttpStatus.CREATED).body("successful toonSkill creation");
+        }
+        catch (Exception e){
+            response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("deez nuts occurred due to "+ e.getMessage() );
+        }
+
+        return response;
+
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addToonStatistics", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newToonStatistics(@RequestBody ToonStatistics newThing) {
+        ToonStatistics savedThing = null;
+        ResponseEntity response = null;
+        try{
+            savedThing = toonStatisticsRepository.save(newThing);
+            response = ResponseEntity.status(HttpStatus.CREATED).body("successful Thing creation");
         }
         catch (Exception e){
             response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)

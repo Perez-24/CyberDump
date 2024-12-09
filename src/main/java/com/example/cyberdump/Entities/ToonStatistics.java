@@ -10,17 +10,16 @@ public class ToonStatistics {
 
     @Id
     private Long toon_id;
-
-    private Integer int_score;
-    private Integer will_score;
-    private Integer cool_score;
-    private Integer emp_score;
-    private Integer tech_score;
-    private Integer ref_score;
-    private Integer luck_score;
-    private Integer body_score;
-    private Integer dex_score;
-    private Integer move_score;
+    private Integer intelligence;
+    private Integer willpower;
+    private Integer cool;
+    private Integer empathy;
+    private Integer technique;
+    private Integer reflexes;
+    private Integer luck;
+    private Integer body;
+    private Integer dexterity;
+    private Integer movement;
 
     private Integer derived_hp;
     private Integer derived_humanity;
@@ -33,84 +32,84 @@ public class ToonStatistics {
         this.toon_id = toon_id;
     }
 
-    public Integer getInt_score() {
-        return int_score;
+    public Integer getIntelligence() {
+        return intelligence;
     }
 
-    public void setInt_score(Integer int_score) {
-        this.int_score = int_score;
+    public void setIntelligence(Integer intelligence) {
+        this.intelligence = intelligence;
     }
 
-    public Integer getWill_score() {
-        return will_score;
+    public Integer getWillpower() {
+        return willpower;
     }
 
-    public void setWill_score(Integer will_score) {
-        this.will_score = will_score;
+    public void setWillpower(Integer willpower) {
+        this.willpower = willpower;
     }
 
-    public Integer getCool_score() {
-        return cool_score;
+    public Integer getCool() {
+        return cool;
     }
 
-    public void setCool_score(Integer cool_score) {
-        this.cool_score = cool_score;
+    public void setCool(Integer cool) {
+        this.cool = cool;
     }
 
-    public Integer getEmp_score() {
-        return emp_score;
+    public Integer getEmpathy() {
+        return empathy;
     }
 
-    public void setEmp_score(Integer emp_score) {
-        this.emp_score = emp_score;
+    public void setEmpathy(Integer empathy) {
+        this.empathy = empathy;
     }
 
-    public Integer getTech_score() {
-        return tech_score;
+    public Integer getTechnique() {
+        return technique;
     }
 
-    public void setTech_score(Integer tech_score) {
-        this.tech_score = tech_score;
+    public void setTechnique(Integer technique) {
+        this.technique = technique;
     }
 
-    public Integer getRef_score() {
-        return ref_score;
+    public Integer getReflexes() {
+        return reflexes;
     }
 
-    public void setRef_score(Integer ref_score) {
-        this.ref_score = ref_score;
+    public void setReflexes(Integer reflexes) {
+        this.reflexes = reflexes;
     }
 
-    public Integer getLuck_score() {
-        return luck_score;
+    public Integer getLuck() {
+        return luck;
     }
 
-    public void setLuck_score(Integer luck_score) {
-        this.luck_score = luck_score;
+    public void setLuck(Integer luck) {
+        this.luck = luck;
     }
 
-    public Integer getBody_score() {
-        return body_score;
+    public Integer getBody() {
+        return body;
     }
 
-    public void setBody_score(Integer body_score) {
-        this.body_score = body_score;
+    public void setBody(Integer body) {
+        this.body = body;
     }
 
-    public Integer getDex_score() {
-        return dex_score;
+    public Integer getDexterity() {
+        return dexterity;
     }
 
-    public void setDex_score(Integer dex_score) {
-        this.dex_score = dex_score;
+    public void setDexterity(Integer dexterity) {
+        this.dexterity = dexterity;
     }
 
-    public Integer getMove_score() {
-        return move_score;
+    public Integer getMovement() {
+        return movement;
     }
 
-    public void setMove_score(Integer move_score) {
-        this.move_score = move_score;
+    public void setMovement(Integer movement) {
+        this.movement = movement;
     }
 
     public Integer getDerived_hp() {
