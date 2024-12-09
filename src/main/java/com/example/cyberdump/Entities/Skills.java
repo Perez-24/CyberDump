@@ -9,7 +9,8 @@ import jakarta.persistence.Table;
 public class Skills {
     @Id
     private Long skill_id;
-    private String skill_name;
+    private String skill_name_pretty;
+    private String skill_name_toon_link;
     private String skill_desc;
     private Integer skill_affiliated_statistic_id;
     private Integer skill_category_id;
@@ -23,12 +24,12 @@ public class Skills {
         this.skill_id = skill_id;
     }
 
-    public String getSkill_name() {
-        return skill_name;
+    public String getSkill_name_pretty() {
+        return skill_name_pretty;
     }
 
-    public void setSkill_name(String skill_name) {
-        this.skill_name = skill_name;
+    public void setSkill_name_pretty(String skill_name) {
+        this.skill_name_pretty = skill_name;
     }
 
     public String getSkill_desc() {
@@ -62,5 +63,13 @@ public class Skills {
 
     public void setSkill_category_id(Integer skill_category) {
         this.skill_category_id = skill_category;
+    }
+
+    public String getSkill_name_toon_link() {
+        return skill_name_toon_link;
+    }
+
+    public void setSkill_name_toon_link(String skill_name_toon_link) {
+        this.skill_name_toon_link = skill_name_toon_link;
     }
 }

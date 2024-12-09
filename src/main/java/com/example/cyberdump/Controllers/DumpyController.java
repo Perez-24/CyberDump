@@ -71,6 +71,13 @@ public class DumpyController {
     }
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/skillCategoryID/{skillCategoryID}")
+    Optional<SkillCategories> getSkillCategoryById(@PathVariable Integer skillCategoryID) {
+
+        return skillCategoriesRepository.findById(skillCategoryID);
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
     @GetMapping("/getLifepathByHandle/{handle}")
     ToonsLifepath getLifepathByHandle(@PathVariable String handle) {
 

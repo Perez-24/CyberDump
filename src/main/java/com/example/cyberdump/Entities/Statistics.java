@@ -11,9 +11,7 @@ public class Statistics {
     private Long statistic_id;
     private String statistic_name;
     private String statistic_abbv;
-
     private String statistic_group;
-
     private String statistic_desc;
 
     public Long getStatistic_id() {
