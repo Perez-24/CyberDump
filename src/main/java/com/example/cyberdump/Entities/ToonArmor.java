@@ -10,9 +10,11 @@ public class ToonArmor {
 
     @Id
     private Long toon_id;
-    private Integer head;
-    private Integer body;
-    private Integer shield;
+    private Integer armor_id;
+
+    private Integer current_head;
+    private Integer current_body;
+    private Integer current_shield;
     public Long getToon_id() {
         return toon_id;
     }
@@ -21,28 +23,36 @@ public class ToonArmor {
         this.toon_id = toon_id;
     }
 
-    public Integer getHead() {
-        return head;
+    public Integer getArmor_id() {
+        return armor_id;
     }
 
-    public void setHead(Integer head) {
-        this.head = head;
+    public void setArmor_id(Integer armor_id) {
+        this.armor_id = armor_id;
     }
 
-    public Integer getBody() {
-        return body;
+    public Integer getCurrent_head() {
+        return current_head;
     }
 
-    public void setBody(Integer body) {
-        this.body = body;
+    public void setCurrent_head(Integer head) {
+        this.current_head = head;
     }
 
-    public Integer getShield() {
-        return shield;
+    public Integer getCurrent_body() {
+        return current_body;
     }
 
-    public void setShield(Integer shield) {
-        this.shield = shield;
+    public void setCurrent_body(Integer body) {
+        this.current_body = body;
+    }
+
+    public Integer getCurrent_shield() {
+        return current_shield;
+    }
+
+    public void setCurrent_shield(Integer shield) {
+        this.current_shield = shield;
     }
 
 }

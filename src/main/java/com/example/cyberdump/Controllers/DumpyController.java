@@ -23,10 +23,14 @@ public class DumpyController {
 
     private final ToonSkillRepository toonSkillRepository;
     private final ToonStatisticsRepository toonStatisticsRepository;
+    private final ToonWeaponsRepository toonWeaponsRepository;
+    private final ToonArmorRepository toonArmorRepository;
 
 
 
-    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository, SkillsRepository skillsRepository, SkillCategoriesRepository skillCategoriesRepository, StatisticRepository statisticRepository, ToonSkillRepository toonSkillRepository, ToonStatisticsRepository toonStatisticsRepository) {
+
+
+    public DumpyController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository, SkillsRepository skillsRepository, SkillCategoriesRepository skillCategoriesRepository, StatisticRepository statisticRepository, ToonSkillRepository toonSkillRepository, ToonStatisticsRepository toonStatisticsRepository, ToonWeaponsRepository toonWeaponsRepository, ToonArmorRepository toonArmorRepository) {
         this.toonsRepository = toonsRepository;
         this.toonsLifepathRepository = toonsLifepathRepository;
         this.streetDrugsRepository = streetDrugsRepository;
@@ -36,6 +40,8 @@ public class DumpyController {
         this.statisticRepository = statisticRepository;
         this.toonSkillRepository = toonSkillRepository;
         this.toonStatisticsRepository = toonStatisticsRepository;
+        this.toonWeaponsRepository = toonWeaponsRepository;
+        this.toonArmorRepository = toonArmorRepository;
     }
 
 
@@ -87,6 +93,21 @@ public class DumpyController {
     Optional<ToonSkills> getToonSkillByID(@PathVariable Integer toonSkillID) {
 
         return toonSkillRepository.findById(toonSkillID);
+    }
+
+    // TODO FIND ALL BY ID
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/toonWeapons/{toonID}")
+    Optional<ToonWeapons> getToonWeaponsById(@PathVariable Integer toonID) {
+
+        return toonWeaponsRepository.findById(toonID);
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/toonArmor/{toonID}")
+    Optional<ToonArmor> getToonArmorById(@PathVariable Integer toonID) {
+
+        return toonArmorRepository.findById(toonID);
     }
 
     @CrossOrigin(origins = "http://127.0.0.1:5500")
@@ -300,6 +321,33 @@ public class DumpyController {
         }
 
         return response;
+
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addToonWeapon", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newToonWeapon(@RequestBody List<ToonWeapons>  newThing) {
+        ResponseEntity response = null;
+        try{
+            toonWeaponsRepository.saveAll(newThing);
+            return ResponseEntity.status(HttpStatus.CREATED).body("successful toonWeapon creation");
+        }
+        catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("deez nuts occurred due to "+ e.getMessage() );
+        }
+
+    }
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addToonArmor", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newToonArmor(@RequestBody List<ToonArmor>  newThing) {
+        ResponseEntity response = null;
+        try{
+            toonArmorRepository.saveAll(newThing);
+            return ResponseEntity.status(HttpStatus.CREATED).body("successful toonArmor creation");
+        }
+        catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("deez nuts occurred due to "+ e.getMessage() );
+        }
 
     }
 
