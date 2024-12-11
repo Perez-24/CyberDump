@@ -1,0 +1,82 @@
+[
+  {
+    "armor_id": 0,
+    "armor_type": "Leathers",
+    "armor_desc": "Thin leather with reinforced pads at shoulders, hips, and gut. Favored by Nomads and other 'punks who ride bikes. This also includes all those road-warrior wannabes wearing open-butt chaps and random sports equipment.",
+    "sp_max": 4,
+    "armor_penalty": "none",
+    "cost": 20
+  },
+  {
+    "armor_id": 1,
+    "armor_type": "Kevlar®",
+    "armor_desc": "The favored protection for the past 90 years. To quote DuPont: Kevlar® is a heat-resistant, synthetic, lightweight fiber that delivers high tensile strength that brings improved protection and performance across a range of industries and applications. Like when people are trying to stab or shoot you. Can be made into clothes, vests, jackets, business suits, and even bikinis.",
+    "sp_max": 7,
+    "armor_penalty": "none",
+    "cost": 50
+  },
+  {
+    "armor_id": 2,
+    "armor_type": "Light Armorjack",
+    "armor_desc": "A combination of Kevlar® and plastic meshes inserted into the weave of the fabric. Armorjack provides superior protection, especially against high-velocity bullets",
+    "sp_max": 11,
+    "armor_penalty": "none",
+    "cost": 100
+  },
+  {
+    "armor_id": 3,
+    "armor_type": "Bodyweight Suit",
+    "armor_desc": " Skinsuit with impact absorbing, sintered armorgel layered in key body areas. Surprisingly, they are also breathable and quite comfortable. Besides giving you a measure of protection, a Bodyweight Suit also has a place to store your Cyberdeck and supports your Interface Plugs so they stay out of the way while you're busy brain-burning that fool who just dared to pop a Hellhound on you. Many Netrunners wear clothing over their Bodyweight Suits, but plenty don't. It's a matter of personal style. Unlike other armor, a Bodyweight Suit isn't bought in two pieces, and must always be worn on both your body and head location. Each location has its own SP11. When repaired, both pieces are repaired at the same time. You can't wear more than one Bodyweight Suit. Wearing a Bodyweight Suit adds one Hardware only Option Slot to a Cyberdeck connected to it. Hardware installed in the Bodyweight Suit cannot be accessed if the armor isn't worn and can only take up 1 Option Slot.",
+    "sp_max": 11,
+    "armor_penalty": "none",
+    "cost": 1000
+  },
+  {
+    "armor_id": 4,
+    "armor_type": "Light Armorjack",
+    "armor_desc": "",
+    "sp_max": 7,
+    "armor_penalty": "none",
+    "cost": 50
+  },
+  {
+    "armor_id": 5,
+    "armor_type": "Medium Armorjack",
+    "armor_desc": "Heavier Armorjack, with solid plastic plating, reinforced with thicker Kevlar® mesh. Typical Street wear, this combines decent protection with a decent ost.",
+    "sp_max": 7,
+    "armor_penalty": "-2 REF,-2 DEX,-2 MOVE",
+    "cost": 100
+  },
+  {
+    "armor_id": 6,
+    "armor_type": "Heavy Armorjack",
+    "armor_desc": "The thickest Armorjack, combining denser Kevlar® and a layered mix of plastic and mesh weaves. It stops all but the heaviest attacks, but costs a pretty eb",
+    "sp_max": 7,
+    "armor_penalty": "-2 REF,-2 DEX,-2 MOVE",
+    "cost": 500
+  },
+  {
+    "armor_id": 7,
+    "armor_type": "Flak",
+    "armor_desc": "This is the 21st century version of the time-honored flak vest and pants with metal plates designed to provide protection from high explosive weaponry, artillery, grenades, shotguns, and anti-personnel mines. Modern flak will also stop many of the higher caliber rounds from automatic rifles.",
+    "sp_max": 15,
+    "armor_penalty": "-4 REF,-4 DEX,-4 MOVE",
+    "cost": 500
+  },
+  {
+    "armor_id": 8,
+    "armor_type": "Metalgear®",
+    "armor_desc": "You know how Evil Empire Storm Troopers just seem to stand there and take the hit? Metalgear® is the Dark Future equivalent of that type of armor: solid metal and plastic plates on a mesh body cover. Metalgear® will stop almost anything, but you're going to be easier to hit than a one-legged bantha in a potho race.",
+    "sp_max": 18,
+    "armor_penalty": "-4 REF,-4 DEX,-4 MOVE",
+    "cost": 5000
+  },
+  {
+    "armor_id": 9,
+    "armor_type": "Bulletproof Shield",
+    "armor_desc": "A transparent polycarbonate shield that can protect you in a firefight. See Using a Shield in the Friday Night Firefight Section (pg. 183)",
+    "sp_max": 0,
+    "armor_penalty": "+10hp, always takes up one arm",
+    "cost": 100
+  }
+]

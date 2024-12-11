@@ -13,7 +13,6 @@ public class Armor {
     private String armor_type;
     private String armor_desc;
     private Integer sp_max;
-    private Integer sp_current;
     private String armor_penalty;
     private Integer cost;
 
@@ -47,14 +46,6 @@ public class Armor {
 
     public void setSp_max(Integer sp_max) {
         this.sp_max = sp_max;
-    }
-
-    public Integer getSp_current() {
-        return sp_current;
-    }
-
-    public void setSp_current(Integer sp) {
-        this.sp_current = sp;
     }
 
     public String getArmor_penalty() {

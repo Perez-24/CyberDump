@@ -8,25 +8,23 @@ import jakarta.persistence.Table;
 @Table(name = "range_wpns")
 public class RangedWeapons {
     @Id
-    private Long toon_id;
     private Long wpn_id;
     private String wpn_name;
     private String wpn_type;
     private Integer num_hands;
     private String damage;
-    private Integer ROF;
-    private Integer can_be_concealed;
+    private Integer rof;
+    private Boolean can_be_concealed;
     private Integer cost;
-    private Integer wpn_skill;
+    private String wpn_skill;
+    private Integer wpn_skill_id;
     private Integer magazine;
-    private Integer current_magazine;
-    public Long getToon_id() {
-        return toon_id;
-    }
+    private Integer autofire;
+    private Boolean can_suppressive_fire;
+    private Boolean uses_shotgun_shells;
+    private Boolean uses_arrows;
+    private Boolean is_explosive;
 
-    public void setToon_id(Long toon_id) {
-        this.toon_id = toon_id;
-    }
 
     public Long getWpn_id() {
         return wpn_id;
@@ -68,20 +66,12 @@ public class RangedWeapons {
         this.damage = damage;
     }
 
-    public Integer getROF() {
-        return ROF;
+    public Integer getRof() {
+        return rof;
     }
 
-    public void setROF(Integer ROF) {
-        this.ROF = ROF;
-    }
-
-    public Integer getCan_be_concealed() {
-        return can_be_concealed;
-    }
-
-    public void setCan_be_concealed(Integer can_be_concealed) {
-        this.can_be_concealed = can_be_concealed;
+    public void setRof(Integer ROF) {
+        this.rof = ROF;
     }
 
     public Integer getCost() {
@@ -92,11 +82,11 @@ public class RangedWeapons {
         this.cost = cost;
     }
 
-    public Integer getWpn_skill() {
+    public String getWpn_skill() {
         return wpn_skill;
     }
 
-    public void setWpn_skill(Integer wpn_skill) {
+    public void setWpn_skill(String wpn_skill) {
         this.wpn_skill = wpn_skill;
     }
 
@@ -108,11 +98,59 @@ public class RangedWeapons {
         this.magazine = magazine;
     }
 
-    public Integer getCurrent_magazine() {
-        return current_magazine;
+    public Boolean getCan_be_concealed() {
+        return can_be_concealed;
     }
 
-    public void setCurrent_magazine(Integer current_magazine) {
-        this.current_magazine = current_magazine;
+    public void setCan_be_concealed(Boolean can_be_concealed) {
+        this.can_be_concealed = can_be_concealed;
+    }
+
+    public Integer getAutofire() {
+        return autofire;
+    }
+
+    public void setAutofire(Integer canAutofire) {
+        this.autofire = canAutofire;
+    }
+
+    public Boolean getCan_suppressive_fire() {
+        return can_suppressive_fire;
+    }
+
+    public void setCan_suppressive_fire(Boolean canSuppressiveFire) {
+        this.can_suppressive_fire = canSuppressiveFire;
+    }
+
+    public Boolean getUses_shotgun_shells() {
+        return uses_shotgun_shells;
+    }
+
+    public void setUses_shotgun_shells(Boolean usesShotgunShells) {
+        this.uses_shotgun_shells = usesShotgunShells;
+    }
+
+    public Boolean getUses_arrows() {
+        return uses_arrows;
+    }
+
+    public void setUses_arrows(Boolean usesArrows) {
+        this.uses_arrows = usesArrows;
+    }
+
+    public Boolean getIs_explosive() {
+        return is_explosive;
+    }
+
+    public void setIs_explosive(Boolean is_explosive) {
+        this.is_explosive = is_explosive;
+    }
+
+    public Integer getWpn_skill_id() {
+        return wpn_skill_id;
+    }
+
+    public void setWpn_skill_id(Integer wpn_skill_id) {
+        this.wpn_skill_id = wpn_skill_id;
     }
 }

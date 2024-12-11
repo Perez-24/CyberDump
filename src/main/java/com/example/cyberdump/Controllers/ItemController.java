@@ -135,6 +135,30 @@ public class ItemController {
         return scList;
     }
 
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/getAllRangedWeapons")
+    public Iterable<RangedWeapons> findAllRangedWeapons() {
+
+        Iterable<RangedWeapons> result = this.rangedWeaponsRepository.findAll();
+        return result;
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/getAllRangedWeaponAttachments")
+    public Iterable<RangedWeaponAttachments> findAllRangedWeaponAttachments() {
+
+        Iterable<RangedWeaponAttachments> result = this.rangedWeaponAttachmentsRepository.findAll();
+        return result;
+    }
+
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/getAllMeleeWeapons")
+    public Iterable<MeleeWeapons> findAllMeleeWeapons() {
+
+        Iterable<MeleeWeapons> result = this.meleeWeaponsRepository.findAll();
+        return result;
+    }
+
     // *******************************************
     // POST ENDPOINTS
     // *******************************************
@@ -206,20 +230,62 @@ public class ItemController {
     // ADD NEW ARMOR
     @CrossOrigin(origins = "http://127.0.0.1:5500")
     @PostMapping(value = "/addArmor", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<String> newArmor(@RequestBody Armor newArmor) {
-        Armor savedArmor = null;
+    public ResponseEntity<String> newArmor(@RequestBody List<Armor>  newStuff) {
         ResponseEntity response = null;
         try{
-            savedArmor = armorRepository.save(newArmor);
-            response = ResponseEntity.status(HttpStatus.CREATED)
-                    .body("successful armor creation");
+            armorRepository.saveAll(newStuff);
+            return ResponseEntity.status(HttpStatus.CREATED).body("successful thing creation");
         }
         catch (Exception e){
-            response = ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                    .body("deez nuts occurred due to "+ e.getMessage() );
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("deez nuts occurred due to "+ e.getMessage() );
         }
 
-        return response;
     }
+
+    // ADD NEW RANGED WEAPON
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addRangedWeapons", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newRangedWeapons(@RequestBody List<RangedWeapons>  newStuff) {
+        ResponseEntity response = null;
+        try{
+            rangedWeaponsRepository.saveAll(newStuff);
+            return ResponseEntity.status(HttpStatus.CREATED).body("successful thing creation");
+        }
+        catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("deez nuts occurred due to "+ e.getMessage() );
+        }
+
+    }
+
+    // ADD NEW RANGED ATTACHMENT WEAPON
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addRangedWeaponAttachment", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newRangedAttachment(@RequestBody List<RangedWeaponAttachments>  newStuff) {
+        ResponseEntity response = null;
+        try{
+            rangedWeaponAttachmentsRepository.saveAll(newStuff);
+            return ResponseEntity.status(HttpStatus.CREATED).body("successful thing creation");
+        }
+        catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("deez nuts occurred due to "+ e.getMessage() );
+        }
+
+    }
+
+    // ADD NEW MELEE WEAPON
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addMeleeWeapons", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newMeleeWeapons(@RequestBody List<MeleeWeapons>  newStuff) {
+        ResponseEntity response = null;
+        try{
+            meleeWeaponsRepository.saveAll(newStuff);
+            return ResponseEntity.status(HttpStatus.CREATED).body("successful thing creation");
+        }
+        catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("deez nuts occurred due to "+ e.getMessage() );
+        }
+
+    }
+
 
 }
