@@ -1,6 +1,6 @@
 package com.example.cyberdump.Repository;
 
-import com.example.cyberdump.Entities.ToonsLifepath;
+import com.example.cyberdump.Entities.ToonRelated.ToonsLifepath;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

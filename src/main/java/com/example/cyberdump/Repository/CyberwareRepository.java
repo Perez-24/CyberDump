@@ -1,7 +1,6 @@
 package com.example.cyberdump.Repository;
 
-import com.example.cyberdump.Entities.Corporations;
-import com.example.cyberdump.Entities.Cyberware;
+import com.example.cyberdump.Entities.GeneralGearRelated.Cyberware;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

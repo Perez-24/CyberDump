@@ -26,6 +26,7 @@ dependencies {
 //	implementation("org.hibernate:hibernate-core:6.6.3.Final")
 //	implementation("org.hibernate:hibernate-entitymanager:5.6.15.Final")
 	implementation("jakarta.xml.bind:jakarta.xml.bind-api:4.0.2")
+	implementation("org.springframework.boot:spring-boot-starter-data-rest:3.3.6")
 
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")

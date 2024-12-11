@@ -1,7 +1,6 @@
 package com.example.cyberdump.Repository;
 
-import com.example.cyberdump.Entities.Fashion;
-import com.example.cyberdump.Entities.GeneralGear;
+import com.example.cyberdump.Entities.GeneralGearRelated.Fashion;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
