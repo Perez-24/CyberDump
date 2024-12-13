@@ -4,14 +4,58 @@
  "cyberware_name":"Biomonitor",
  "cyberware_type":"fashionwaire",
  "cyberware_type_id":"0",
- "install_type":"",
- "description":"",
- "cost":"",
- "hl_avg":"",
- "hl":""
+ "install_type":"Mall",
+ "description":"Subdermal implant which generates a constant LED readout of pulse, temperature, \nrespiration, blood sugar, etc. You can link your Biomonitor to your Agent to allow it to  \ntrack your wellness.",
+ "cost":"100",
+ "hl_avg":"0",
+ "hl":"0"
  },
  {
-  "cyberware_id":"",
+  "cyberware_id":"1",
+  "cyberware_name":"Chemskin",
+  "cyberware_type":"fashionwaire",
+  "cyberware_type_id":"0",
+  "install_type":"Mall",
+  "description":"Dyes and pigments infused into the skin to permanently change its hue, the applications \nof which can range from hiding blemishes to the desire for neon-green skin. Pigments can \noptionally be temperature-sensitive or reactant to hormone changes in the body. A user \nwith Chemskin and Techhair adds +2 to their Personal Grooming Skill for  \nhaving both. (This bonus only applies once)",
+  "cost":"100",
+  "hl_avg":"0",
+  "hl":"0"
+ },
+ {
+  "cyberware_id":"2",
+  "cyberware_name":"EMP Threading",
+  "cyberware_type":"fashionware",
+  "cyberware_type_id":"0",
+  "install_type":"Mall",
+  "description":"Popularized by the media sensation UR, these thin silver lines run in circuit-like patterns \nacross the body. Many people believe they act as a \"Faraday cage\" to protect you from \nradiation and EMP effects but so far there’s no scientific backing to these claims. But they \nsure do look cool. Most people wear EMP Threading as a fashion statement.",
+  "cost":"10",
+  "hl_avg":"0",
+  "hl":"0"
+ },
+ {
+  "cyberware_id":"3",
+  "cyberware_name":"Light Tattoo",
+  "cyberware_type":"Fashionware",
+  "cyberware_type_id":"0",
+  "install_type":"Mall",
+  "description":"Subdermal patches store light and project colored tattoos under the skin. The larger the \npiece, the more installations of this fashionware you need to complete it. A user with a \nthree or more Light Tattoo installations adds +2 to their Wardrobe & Style Skill. \n(This bonus only applies once.)",
+  "cost":"100",
+  "hl_avg":"0",
+  "hl":"0"
+ },
+ {
+  "cyberware_id":"4",
+  "cyberware_name":"Shift Tacts",
+  "cyberware_type":"Fashionware",
+  "cyberware_type_id":"0",
+  "install_type":"Mall",
+  "description":"Color-changing lenses implanted into the eye. Several patterns are also available. Lenses \ncan optionally be temperature-sensitive or reactant to hormone changes in the body. Only \none choice of color and pattern can be made, but the user can deactivate the color change \nat any time desired without an Action.",
+  "cost":"100",
+  "hl_avg":"0",
+  "hl":"0"
+ },
+ {
+  "cyberware_id":"5",
   "cyberware_name":"",
   "cyberware_type":"",
   "cyberware_type_id":"",
@@ -22,18 +66,7 @@
   "hl":""
  },
  {
-  "cyberware_id":"",
-  "cyberware_name":"",
-  "cyberware_type":"",
-  "cyberware_type_id":"",
-  "install_type":"",
-  "description":"",
-  "cost":"",
-  "hl_avg":"",
-  "hl":""
- },
- {
-  "cyberware_id":"",
+  "cyberware_id":"6  ",
   "cyberware_name":"",
   "cyberware_type":"",
   "cyberware_type_id":"",

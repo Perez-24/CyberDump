@@ -24,7 +24,12 @@ public final class Constants {
     public static final Integer NEURALWARE = 1;
     public static final Integer CYBEROPTICS = 2;
     public static final Integer CYBERAUDIO = 3;
-    public static final Integer INTERNAL_BODY = 2;
+    public static final Integer INTERNAL_BODY = 4;
+    public static final Integer EXTERNAL_BODY = 5;
+    public static final Integer CYBERLIMBS = 6;
+    public static final Integer BORGWARE = 7;
+
+
 
 
 
