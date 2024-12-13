@@ -1,5 +1,6 @@
 package com.example.cyberdump.Controllers;
 
+import com.example.cyberdump.CyberDumpApplication;
 import com.example.cyberdump.Entities.Core.SkillCategories;
 import com.example.cyberdump.Entities.Core.Skills;
 import com.example.cyberdump.Entities.Core.Statistics;
@@ -24,9 +25,11 @@ public class ItemController {
     private final RangedWeaponsRepository rangedWeaponsRepository;
     private final RangedWeaponAttachmentsRepository rangedWeaponAttachmentsRepository;
     private final MeleeWeaponsRepository meleeWeaponsRepository;
+    private final CyberdeckHardwareRepository cyberdeckHardwareRepository;
 
 
-    public ItemController(StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository, SkillsRepository skillsRepository, SkillCategoriesRepository skillCategoriesRepository, StatisticRepository statisticRepository, RangedWeaponsRepository rangedWeaponsRepository, RangedWeaponAttachmentsRepository rangedWeaponAttachmentsRepository, MeleeWeaponsRepository meleeWeaponsRepository) {
+
+    public ItemController(StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository, SkillsRepository skillsRepository, SkillCategoriesRepository skillCategoriesRepository, StatisticRepository statisticRepository, RangedWeaponsRepository rangedWeaponsRepository, RangedWeaponAttachmentsRepository rangedWeaponAttachmentsRepository, MeleeWeaponsRepository meleeWeaponsRepository, CyberdeckHardwareRepository cyberdeckHardwareRepository) {
         this.streetDrugsRepository = streetDrugsRepository;
         this.armorRepository = armorRepository;
         this.skillsRepository = skillsRepository;
@@ -35,6 +38,7 @@ public class ItemController {
         this.rangedWeaponsRepository = rangedWeaponsRepository;
         this.rangedWeaponAttachmentsRepository = rangedWeaponAttachmentsRepository;
         this.meleeWeaponsRepository = meleeWeaponsRepository;
+        this.cyberdeckHardwareRepository = cyberdeckHardwareRepository;
     }
 
 
@@ -135,6 +139,7 @@ public class ItemController {
         return scList;
     }
 
+    // GET ALL RANGED WEAPONS
     @CrossOrigin(origins = "http://127.0.0.1:5500")
     @GetMapping("/getAllRangedWeapons")
     public Iterable<RangedWeapons> findAllRangedWeapons() {
@@ -143,6 +148,7 @@ public class ItemController {
         return result;
     }
 
+    // GET ALL RANGED WEAPON ATTACHMENTS
     @CrossOrigin(origins = "http://127.0.0.1:5500")
     @GetMapping("/getAllRangedWeaponAttachments")
     public Iterable<RangedWeaponAttachments> findAllRangedWeaponAttachments() {
@@ -151,11 +157,21 @@ public class ItemController {
         return result;
     }
 
+    // GET ALL MELEE WEAPONS
     @CrossOrigin(origins = "http://127.0.0.1:5500")
     @GetMapping("/getAllMeleeWeapons")
     public Iterable<MeleeWeapons> findAllMeleeWeapons() {
 
         Iterable<MeleeWeapons> result = this.meleeWeaponsRepository.findAll();
+        return result;
+    }
+
+    // GET ALL Cyberdeck Hardware
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/getAllCyberdeckHardware")
+    public Iterable<CyberdeckHardware> findAllCyberdeckHardware() {
+
+        Iterable<CyberdeckHardware> result = this.cyberdeckHardwareRepository.findAll();
         return result;
     }
 
@@ -279,6 +295,21 @@ public class ItemController {
         ResponseEntity response = null;
         try{
             meleeWeaponsRepository.saveAll(newStuff);
+            return ResponseEntity.status(HttpStatus.CREATED).body("successful thing creation");
+        }
+        catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("deez nuts occurred due to "+ e.getMessage() );
+        }
+
+    }
+
+    // ADD NEW CYBDERDECK HARDWARE
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addCybderdeckHardware", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newCyberdeckHardware(@RequestBody List<CyberdeckHardware>  newStuff) {
+        ResponseEntity response = null;
+        try{
+            cyberdeckHardwareRepository.saveAll(newStuff);
             return ResponseEntity.status(HttpStatus.CREATED).body("successful thing creation");
         }
         catch (Exception e){
