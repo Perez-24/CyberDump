@@ -12,10 +12,13 @@ public class Cyberware {
     private Long cyberware_id;
     private String cyberware_name;
     private String cyberware_type;
+    private String cyberware_type_id;
+
     private String install_type;
     private String description;
     private String cost;
-    private String HL;
+    private String hl_avg;
+    private String hl;
 
 
     public Long getCyberware_id() {
@@ -66,11 +69,27 @@ public class Cyberware {
         this.cost = cost;
     }
 
-    public String getHL() {
-        return HL;
+    public String getHl_avg() {
+        return hl_avg;
     }
 
-    public void setHL(String HL) {
-        this.HL = HL;
+    public void setHl_avg(String hl_avg) {
+        this.hl_avg = hl_avg;
+    }
+
+    public String getHl() {
+        return hl;
+    }
+
+    public void setHl(String hl) {
+        this.hl = hl;
+    }
+
+    public String getCyberware_type_id() {
+        return cyberware_type_id;
+    }
+
+    public void setCyberware_type_id(String cyberware_type_id) {
+        this.cyberware_type_id = cyberware_type_id;
     }
 }

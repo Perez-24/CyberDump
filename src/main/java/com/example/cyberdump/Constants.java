@@ -6,6 +6,8 @@ public final class Constants {
         // restrict instantiation
     }
 
+
+// statistic ids
     public static final Integer INT = 0;
     public static final Integer WILL = 1;
     public static final Integer COOL = 2;
@@ -17,6 +19,16 @@ public final class Constants {
     public static final Integer DEX = 8;
     public static final Integer MOVE = 9;
 
+// Cyberware slot IDS
+    public static final Integer FASHIONWARE = 0;
+    public static final Integer NEURALWARE = 1;
+    public static final Integer CYBEROPTICS = 2;
+    public static final Integer CYBERAUDIO = 3;
+    public static final Integer INTERNAL_BODY = 2;
 
-    public static final double PLANCK_CONSTANT = 6.62606896e-34;
+
+
+
+
+
 }

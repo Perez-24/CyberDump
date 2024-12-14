@@ -3,14 +3,42 @@
     "cyberdeck_hardware_id":0,
     "cyberdeck_hardware_name": "Backup Drive",
     "option_slots":2,
-    "description":"While installed on a Cyberdeck, a Backup Drive \"saves\" Non-Black ICE Attacker, Defender, or Booster Programs\nthat are destroyed by pulling them into the Backup Drive the instant before they meet their end. As a Meat\nAction, a Netrunner can re-install all Programs \"saved\" by the Backup Drive onto their deck, if they have\nthe Slots for them. If removed from a Cyberdeck, the Backup Drive erases its contents automatically. Restored\nPrograms with once-per-Netrun restrictions and the like are restored in the exact state they were saved in, so\nyou can't kill your own Armor to refresh it. Yeah, that means you. Takes 2 Hardware Option Slots.",
+    "description":"While installed on a Cyberdeck, a Backup Drive \"saves\" Non-Black ICE Attacker, Defender, or Booster Programs that are destroyed by pulling them into the Backup Drive the instant before they meet their end. As a Meat Action, a Netrunner can re-install all Programs \"saved\" by the Backup Drive onto their deck, if they have the Slots for them. If removed from a Cyberdeck, the Backup Drive erases its contents automatically. Restored Programs with once-per-Netrun restrictions and the like are restored in the exact state they were saved in, so you can't kill your own Armor to refresh it. Yeah, that means you. Takes 2 Hardware Option Slots.",
     "cost":100
   },
   {
     "cyberdeck_hardware_id":1,
     "cyberdeck_hardware_name": "DNA Lock",
     "option_slots":2,
-    "description":"While installed on a Cyberdeck, a Backup Drive \"saves\" Non-Black ICE Attacker, Defender, or Booster Programs\nthat are destroyed by pulling them into the Backup Drive the instant before they meet their end. As a Meat\nAction, a Netrunner can re-install all Programs \"saved\" by the Backup Drive onto their deck, if they have\nthe Slots for them. If removed from a Cyberdeck, the Backup Drive erases its contents automatically. Restored\nPrograms with once-per-Netrun restrictions and the like are restored in the exact state they were saved in, so\nyou can't kill your own Armor to refresh it. Yeah, that means you. Takes 2 Hardware Option Slots.",
+    "description":"While installed on a Cyberdeck, a Backup Drive \"saves\" Non-Black ICE Attacker, Defender, or Booster Programs that are destroyed by pulling them into the Backup Drive the instant before they meet their end. As a Meat Action, a Netrunner can re-install all Programs \"saved\" by the Backup Drive onto their deck, if they have the Slots for them. If removed from a Cyberdeck, the Backup Drive erases its contents automatically. Restored Programs with once-per-Netrun restrictions and the like are restored in the exact state they were saved in, so you can't kill your own Armor to refresh it. Yeah, that means you. Takes 2 Hardware Option Slots.",
+    "cost":100
+  },
+  {
+    "cyberdeck_hardware_id":2,
+    "cyberdeck_hardware_name": "Hardened Circuitry",
+    "option_slots":0,
+    "description":"A Cyberdeck with Hardened Circuitry cannot be rendered temporarily disabled, rendered inoperable, or destroyed by EMP effects like pulses, or Non-Black ICE Program Effects.",
+    "cost":100
+  },
+  {
+    "cyberdeck_hardware_id":3,
+    "cyberdeck_hardware_name": "Insulated Wiring",
+    "option_slots":0,
+    "description":"A Cyberdeck with Insulated Wiring cannot catch fire or cause the user's clothing to catch fire as the result of a Program effect.",
+    "cost":100
+  },
+  {
+    "cyberdeck_hardware_id":4,
+    "cyberdeck_hardware_name": "KRASH Barrier",
+    "option_slots":2,
+    "description":"A Cyberdeck with a KRASH Barrier is immune to any Program Effect that force the Netrunner to Jack Out, safely or unsafely. Takes 2 Hardware Option Slots.",
+    "cost":100
+  },
+  {
+    "cyberdeck_hardware_id":5,
+    "cyberdeck_hardware_name": "Range Upgrade",
+    "option_slots":2,
+    "description":"A Cyberdeck with a Range Upgrade can connect to an access point from up to 8m away.",
     "cost":100
   }
 ]
