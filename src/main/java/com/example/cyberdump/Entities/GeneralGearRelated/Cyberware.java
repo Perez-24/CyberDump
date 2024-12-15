@@ -13,12 +13,19 @@ public class Cyberware {
     private String cyberware_name;
     private String cyberware_type;
     private String cyberware_type_id;
-
     private String install_type;
     private String description;
     private String cost;
     private String hl_avg;
     private String hl;
+    private Boolean is_foundational;
+    private Integer required_cyberware;
+    private Integer requires_pair;
+    private Integer available_option_slots;
+    private Integer option_slot_cost;
+
+
+
 
 
     public Long getCyberware_id() {
@@ -91,5 +98,45 @@ public class Cyberware {
 
     public void setCyberware_type_id(String cyberware_type_id) {
         this.cyberware_type_id = cyberware_type_id;
+    }
+
+    public Boolean getIs_foundational() {
+        return is_foundational;
+    }
+
+    public void setIs_foundational(Boolean is_foundational) {
+        this.is_foundational = is_foundational;
+    }
+
+    public Integer getRequired_cyberware() {
+        return required_cyberware;
+    }
+
+    public void setRequired_cyberware(Integer required_cyberware) {
+        this.required_cyberware = required_cyberware;
+    }
+
+    public Integer getRequires_pair() {
+        return requires_pair;
+    }
+
+    public void setRequires_pair(Integer requires_pair) {
+        this.requires_pair = requires_pair;
+    }
+
+    public Integer getAvailable_option_slots() {
+        return available_option_slots;
+    }
+
+    public void setAvailable_option_slots(Integer available_option_slots) {
+        this.available_option_slots = available_option_slots;
+    }
+
+    public Integer getOption_slot_cost() {
+        return option_slot_cost;
+    }
+
+    public void setOption_slot_cost(Integer option_slot_cost) {
+        this.option_slot_cost = option_slot_cost;
     }
 }

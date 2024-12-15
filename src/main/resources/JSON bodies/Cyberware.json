@@ -56,24 +56,30 @@
  },
  {
   "cyberware_id":"5",
-  "cyberware_name":"",
-  "cyberware_type":"",
-  "cyberware_type_id":"",
-  "install_type":"",
-  "description":"",
-  "cost":"",
-  "hl_avg":"",
-  "hl":""
+  "cyberware_name":"Skinwatch",
+  "cyberware_type":"Fashionware",
+  "cyberware_type_id":"0",
+  "install_type":"Mall",
+  "description":"Subdermal implant generates a constant LED readout of the current time and date visible \nthrough the skin.",
+  "cost":"100",
+  "hl_avg":"0",
+  "hl":"0"
  },
  {
-  "cyberware_id":"6  ",
-  "cyberware_name":"",
-  "cyberware_type":"",
-  "cyberware_type_id":"",
-  "install_type":"",
-  "description":"",
-  "cost":"",
-  "hl_avg":"",
-  "hl":""
- }
+  "cyberware_id":"6",
+  "cyberware_name":"Techhair",
+  "cyberware_type":"Fashionware",
+  "cyberware_type_id":"0",
+  "install_type":"Mall",
+  "description":"Color-light-emitting artificial hair. Hair can optionally be temperature sensitive, motorized \nto extend/retract, or reactant to hormone changes in the body. A user with Chemskin \nand Techhair adds +2 to their Personal Grooming Skill for having both. (This \nbonus only applies once.)",
+  "cost":"100",
+  "hl_avg":"0",
+  "hl":"0"
+ },
+
+ "is_foundational":,
+ "required_cyberware":,
+ "requires_pair":,
+ "available_option_slots":,
+ "option_slot_cost":,
   ]
