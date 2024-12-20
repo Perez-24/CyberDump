@@ -103,6 +103,15 @@ public class ItemController {
     // GET ALL ENDPOINTS
     // *******************************************
 
+    // GET ALL SKILLS
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/getAllSkills")
+    public Iterable<Skills> findAllSkills() {
+
+        Iterable<Skills> stuff = this.skillsRepository.findAll();
+        return stuff;
+    }
+
     // GET ALL DRUGS
     @CrossOrigin(origins = "http://127.0.0.1:5500")
     @GetMapping("/getAllDrugs")
