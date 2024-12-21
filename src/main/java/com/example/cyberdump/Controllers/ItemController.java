@@ -26,10 +26,12 @@ public class ItemController {
     private final RangedWeaponAttachmentsRepository rangedWeaponAttachmentsRepository;
     private final MeleeWeaponsRepository meleeWeaponsRepository;
     private final CyberdeckHardwareRepository cyberdeckHardwareRepository;
+    private final CyberwareRepository cyberwareRepository;
 
 
 
-    public ItemController(StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository, SkillsRepository skillsRepository, SkillCategoriesRepository skillCategoriesRepository, StatisticRepository statisticRepository, RangedWeaponsRepository rangedWeaponsRepository, RangedWeaponAttachmentsRepository rangedWeaponAttachmentsRepository, MeleeWeaponsRepository meleeWeaponsRepository, CyberdeckHardwareRepository cyberdeckHardwareRepository) {
+
+    public ItemController(StreetDrugsRepository streetDrugsRepository, ArmorRepository armorRepository, SkillsRepository skillsRepository, SkillCategoriesRepository skillCategoriesRepository, StatisticRepository statisticRepository, RangedWeaponsRepository rangedWeaponsRepository, RangedWeaponAttachmentsRepository rangedWeaponAttachmentsRepository, MeleeWeaponsRepository meleeWeaponsRepository, CyberdeckHardwareRepository cyberdeckHardwareRepository, CyberwareRepository cyberwareRepository) {
         this.streetDrugsRepository = streetDrugsRepository;
         this.armorRepository = armorRepository;
         this.skillsRepository = skillsRepository;
@@ -39,6 +41,7 @@ public class ItemController {
         this.rangedWeaponAttachmentsRepository = rangedWeaponAttachmentsRepository;
         this.meleeWeaponsRepository = meleeWeaponsRepository;
         this.cyberdeckHardwareRepository = cyberdeckHardwareRepository;
+        this.cyberwareRepository = cyberwareRepository;
     }
 
 
