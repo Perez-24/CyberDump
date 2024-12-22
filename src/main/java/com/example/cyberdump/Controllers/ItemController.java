@@ -102,6 +102,14 @@ public class ItemController {
         return meleeWeaponsRepository.findById(id);
     }
 
+    // GET Cyberware by cyberware_id
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/cyberwareById/{id}")
+    Optional<Cyberware> getCyberwareByID(@PathVariable Integer id) {
+        return cyberwareRepository.findById(id);
+    }
+
+
     // *******************************************
     // GET ALL ENDPOINTS
     // *******************************************
