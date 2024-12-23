@@ -195,6 +195,15 @@ public class ItemController {
         return result;
     }
 
+    // GET ALL Cyberware
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/getAllCyberware")
+    public Iterable<Cyberware> findAllCyberware() {
+
+        Iterable<Cyberware> result = this.cyberwareRepository.findAll();
+        return result;
+    }
+
     // *******************************************
     // POST ENDPOINTS
     // *******************************************
