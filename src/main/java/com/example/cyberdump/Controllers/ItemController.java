@@ -332,6 +332,21 @@ public class ItemController {
 
     }
 
+    // ADD NEW CYBERWARE
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addCyberware", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newCyberware(@RequestBody List<Cyberware>  newStuff) {
+        ResponseEntity response = null;
+        try{
+            cyberwareRepository.saveAll(newStuff);
+            return ResponseEntity.status(HttpStatus.CREATED).body("successful thing creation");
+        }
+        catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("deez nuts occurred due to "+ e.getMessage() );
+        }
+
+    }
+
     // ADD NEW CYBDERDECK HARDWARE
     @CrossOrigin(origins = "http://127.0.0.1:5500")
     @PostMapping(value = "/addCybderdeckHardware", consumes = MediaType.APPLICATION_JSON_VALUE)
