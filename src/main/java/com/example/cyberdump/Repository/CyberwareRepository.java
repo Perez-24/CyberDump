@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CyberwareRepository extends JpaRepository<Cyberware, Integer> {
-    Cyberware findByCyberware_nameIgnoreCase(String cyberware_name);
+    //Cyberware findByCyberware_nameIgnoreCase(String cyberware_name);
 
 }
