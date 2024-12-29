@@ -2,55 +2,121 @@ package com.example.cyberdump.Entities.Core;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.IdClass;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "statistics")
-public class Statistics {
+@IdClass(StreetRatStatisticTemplates.class)
+@Table(name = "statistic_templates")
+public class StreetRatStatisticTemplates {
     @Id
-    private Long statistic_id;
-    private String statistic_name;
-    private String statistic_abbv;
-    private String statistic_group;
-    private String statistic_desc;
+    private Integer role_id;
+    @Id
+    private Integer stat_role_id;
+    private Integer inte;
+    private Integer ref;
+    private Integer dex;
+    private Integer tech;
+    private Integer cool;
+    private Integer will;
+    private Integer luck;
+    private Integer move;
+    private Integer body;
+    private Integer emp;
 
-    public Long getStatistic_id() {
-        return statistic_id;
+    public Integer getRole_id() {
+        return role_id;
     }
 
-    public void setStatistic_id(Long statistic_id) {
-        this.statistic_id = statistic_id;
+    public void setRole_id(Integer role_id) {
+        this.role_id = role_id;
     }
 
-    public String getStatistic_name() {
-        return statistic_name;
+    public Integer getStat_role_id() {
+        return stat_role_id;
     }
 
-    public void setStatistic_name(String statistic_name) {
-        this.statistic_name = statistic_name;
+    public void setStat_role_id(Integer stat_role_id) {
+        this.stat_role_id = stat_role_id;
     }
 
-    public String getStatistic_abbv() {
-        return statistic_abbv;
+    public Integer getInte() {
+        return inte;
     }
 
-    public void setStatistic_abbv(String statistic_abbv) {
-        this.statistic_abbv = statistic_abbv;
+    public void setInte(Integer inte) {
+        this.inte = inte;
     }
 
-    public String getStatistic_group() {
-        return statistic_group;
+    public Integer getRef() {
+        return ref;
     }
 
-    public void setStatistic_group(String statistic_group) {
-        this.statistic_group = statistic_group;
+    public void setRef(Integer ref) {
+        this.ref = ref;
     }
 
-    public String getStatistic_desc() {
-        return statistic_desc;
+    public Integer getDex() {
+        return dex;
     }
 
-    public void setStatistic_desc(String statistic_desc) {
-        this.statistic_desc = statistic_desc;
+    public void setDex(Integer dex) {
+        this.dex = dex;
+    }
+
+    public Integer getTech() {
+        return tech;
+    }
+
+    public void setTech(Integer tech) {
+        this.tech = tech;
+    }
+
+    public Integer getCool() {
+        return cool;
+    }
+
+    public void setCool(Integer cool) {
+        this.cool = cool;
+    }
+
+    public Integer getWill() {
+        return will;
+    }
+
+    public void setWill(Integer will) {
+        this.will = will;
+    }
+
+    public Integer getLuck() {
+        return luck;
+    }
+
+    public void setLuck(Integer luck) {
+        this.luck = luck;
+    }
+
+    public Integer getMove() {
+        return move;
+    }
+
+    public void setMove(Integer move) {
+        this.move = move;
+    }
+
+    public Integer getBody() {
+        return body;
+    }
+
+    public void setBody(Integer body) {
+        this.body = body;
+    }
+
+    public Integer getEmp() {
+        return emp;
+    }
+
+    public void setEmp(Integer emp) {
+        this.emp = emp;
     }
 }
