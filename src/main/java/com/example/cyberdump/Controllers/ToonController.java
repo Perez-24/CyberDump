@@ -29,6 +29,7 @@ public class ToonController {
     // private final ToonRangedAttachmentsRepository toonRangedAttachmentsRepository;
     // private final ToonHomeDefenseRepository toonHomeDefenseRepository;
     // private final ToonNetrunnerProgramsRepository toonNetrunnerProgramsRepository;
+    // private final ToonVehicleRepository toonVehicleRepository;
 
 
 
