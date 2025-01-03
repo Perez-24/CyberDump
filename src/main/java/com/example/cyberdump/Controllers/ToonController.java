@@ -20,6 +20,17 @@ public class ToonController {
     private final ToonWeaponsRepository toonWeaponsRepository;
     private final ToonArmorRepository toonArmorRepository;
 
+    // TODO : create these Entities + Repositories + Endpoints to create and retrieve
+    // private final ToonCyberwareRepository toonCyberwareRepository;
+    // private final ToonFashionRepository toonFashionRepository;
+    // private final ToonCyberdeckHardware toonCyberdeckHardware;
+    // private final ToonGeneralGearRepository toonGeneralGearRepository;
+    // private final ToonStreetDrugsRepository toonStreetDrugsRepository;
+    // private final ToonRangedAttachmentsRepository toonRangedAttachmentsRepository;
+    // private final ToonHomeDefenseRepository toonHomeDefenseRepository;
+    // private final ToonNetrunnerProgramsRepository toonNetrunnerProgramsRepository;
+
+
 
     public ToonController(ToonsRepository toonsRepository, ToonsLifepathRepository toonsLifepathRepository, ToonSkillRepository toonSkillRepository, ToonStatisticsRepository toonStatisticsRepository, ToonWeaponsRepository toonWeaponsRepository, ToonArmorRepository toonArmorRepository) {
         this.toonsRepository = toonsRepository;
