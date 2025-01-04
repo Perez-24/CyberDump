@@ -17,13 +17,22 @@ import java.util.Optional;
 @RestController
 public class ItemController {
 
-    private final StreetDrugsRepository streetDrugsRepository;
     private final ArmorRepository armorRepository;
     private final RangedWeaponsRepository rangedWeaponsRepository;
     private final RangedWeaponAttachmentsRepository rangedWeaponAttachmentsRepository;
     private final MeleeWeaponsRepository meleeWeaponsRepository;
     private final CyberdeckHardwareRepository cyberdeckHardwareRepository;
     private final CyberwareRepository cyberwareRepository;
+    private final StreetDrugsRepository streetDrugsRepository;
+
+
+    // TODO : create Repositories + Entities + Endpoints
+    // private final FashionRepository fashionRepository;
+    // private final GeneralGearRepository generalGearRepository;
+    // private final HomeDefenseRepository homeDefenseRepository;
+    // private final NetrunnerProgramsRepository netrunnerProgramsRepository;
+    // private final VehicleRepository vehicleRepository;
+
 
 
 
