@@ -1,10 +1,6 @@
 package com.example.cyberdump.Controllers;
 
-import com.example.cyberdump.CyberDumpApplication;
-import com.example.cyberdump.Entities.Core.SkillCategories;
-import com.example.cyberdump.Entities.Core.Skills;
-import com.example.cyberdump.Entities.Core.Statistics;
-import com.example.cyberdump.Entities.GeneralGearRelated.*;
+import com.example.cyberdump.Entities.ItemRelated.*;
 import com.example.cyberdump.Repository.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

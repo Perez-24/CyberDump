@@ -1,4 +1,4 @@
-package com.example.cyberdump.Entities.GeneralGearRelated;
+package com.example.cyberdump.Entities.ItemRelated;
 
 import jakarta.persistence.*;
 

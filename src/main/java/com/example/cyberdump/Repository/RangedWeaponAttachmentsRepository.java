@@ -1,7 +1,6 @@
 package com.example.cyberdump.Repository;
 
-import com.example.cyberdump.Entities.GeneralGearRelated.RangedWeaponAttachments;
-import com.example.cyberdump.Entities.GeneralGearRelated.RangedWeapons;
+import com.example.cyberdump.Entities.ItemRelated.RangedWeaponAttachments;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
