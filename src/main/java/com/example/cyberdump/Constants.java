@@ -29,6 +29,18 @@ public final class Constants {
     public static final Integer CYBERLIMBS = 6;
     public static final Integer BORGWARE = 7;
 
+    //Role IDs
+    // ROLE must be appended to Role constant names because there is a statistic called TECH, and I cna't use that as a constant again.
+    public static final Integer ROCKERBOY_ROLE = 0;
+    public static final Integer SOLO_ROLE = 1;
+    public static final Integer NETRUNNER_ROLE = 2;
+    public static final Integer TECH_ROLE = 3;
+    public static final Integer MEDTECH_ROLE = 4;
+    public static final Integer MEDIA_ROLE = 5;
+    public static final Integer EXEC_ROLE = 6;
+    public static final Integer LAWMAN_ROLE = 7;
+    public static final Integer FIXER_ROLE = 8;
+    public static final Integer NOMAD_ROLE = 9;
 
 
 
