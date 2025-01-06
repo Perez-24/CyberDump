@@ -1,18 +1,19 @@
 package com.example.cyberdump.Entities.Core;
 
+import com.example.cyberdump.Entities.Core.CompositeKeys.StreetRatStatisticTemplateId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.IdClass;
 import jakarta.persistence.Table;
 
 @Entity
-@IdClass(StreetRatStatisticTemplates.class)
+@IdClass(StreetRatStatisticTemplateId.class)
 @Table(name = "statistic_templates")
 public class StreetRatStatisticTemplates {
     @Id
     private Integer role_id;
     @Id
-    private Integer stat_role_id;
+    private Integer stat_roll_id;
     private Integer inte;
     private Integer ref;
     private Integer dex;
@@ -24,6 +25,7 @@ public class StreetRatStatisticTemplates {
     private Integer body;
     private Integer emp;
 
+
     public Integer getRole_id() {
         return role_id;
     }
@@ -32,12 +34,12 @@ public class StreetRatStatisticTemplates {
         this.role_id = role_id;
     }
 
-    public Integer getStat_role_id() {
-        return stat_role_id;
+    public Integer getStat_roll_id() {
+        return stat_roll_id;
     }
 
-    public void setStat_role_id(Integer stat_role_id) {
-        this.stat_role_id = stat_role_id;
+    public void setStat_roll_id(Integer stat_roll_id) {
+        this.stat_roll_id = stat_roll_id;
     }
 
     public Integer getInte() {
