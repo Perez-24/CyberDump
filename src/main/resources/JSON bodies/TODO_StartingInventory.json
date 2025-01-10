@@ -11,7 +11,7 @@
     "luck": 7,
     "move": 7,
     "body": 3,
-    "empa": 8
+    "emp": 8
   },
   {
     "role_id": 0,
@@ -25,7 +25,7 @@
     "luck": 7,
     "move": 7,
     "body": 5,
-    "empa": 8
+    "emp": 8
   },
   {
     "role_id": 0,
@@ -39,7 +39,7 @@
     "luck": 7,
     "move": 7,
     "body": 5,
-    "empa": 8
+    "emp": 8
   },
   {
     "role_id": 0,
@@ -53,7 +53,7 @@
     "luck": 7,
     "move": 6,
     "body": 3,
-    "empa": 8
+    "emp": 8
   },
   {
     "role_id": 0,
@@ -67,7 +67,7 @@
     "luck": 6,
     "move": 5,
     "body": 4,
-    "empa": 7
+    "emp": 7
   },
   {
     "role_id": 0,
@@ -81,7 +81,7 @@
     "luck": 5,
     "move": 7,
     "body": 3,
-    "empa": 7
+    "emp": 7
   },
   {
     "role_id": 0,
@@ -95,7 +95,7 @@
     "luck": 7,
     "move": 6,
     "body": 3,
-    "empa": 6
+    "emp": 6
   },
   {
     "role_id": 0,
@@ -109,7 +109,7 @@
     "luck": 6,
     "move": 6,
     "body": 4,
-    "empa": 8
+    "emp": 8
   },
   {
     "role_id": 0,
@@ -123,7 +123,7 @@
     "luck": 7,
     "move": 5,
     "body": 5,
-    "empa": 7
+    "emp": 7
   },
   {
     "role_id": 0,
@@ -137,7 +137,7 @@
     "luck": 7,
     "move": 6,
     "body": 4,
-    "empa": 7
+    "emp": 7
   },
   {
     "role_id": 1,
@@ -151,7 +151,7 @@
     "luck": 2,
     "move": 2,
     "body": 6,
-    "empa": 5
+    "emp": 5
   },
   {
     "role_id": 1,
@@ -165,7 +165,7 @@
     "luck": 7,
     "move": 5,
     "body": 6,
-    "empa": 6
+    "emp": 6
   },
   {
     "role_id": 1,
@@ -179,7 +179,7 @@
     "luck": 6,
     "move": 7,
     "body": 8,
-    "empa": 5
+    "emp": 5
   },
   {
     "role_id": 1,
@@ -193,7 +193,7 @@
     "luck": 6,
     "move": 2,
     "body": 7,
-    "empa": 6
+    "emp": 6
   },
   {
     "role_id": 1,
@@ -207,7 +207,7 @@
     "luck": 7,
     "move": 6,
     "body": 8,
-    "empa": 4
+    "emp": 4
   },
   {
     "role_id": 1,
@@ -221,7 +221,7 @@
     "luck": 6,
     "move": 7,
     "body": 7,
-    "empa": 5
+    "emp": 5
   },
   {
     "role_id": 1,
@@ -235,7 +235,7 @@
     "luck": 7,
     "move": 6,
     "body": 6,
-    "empa": 6
+    "emp": 6
   },
   {
     "role_id": 1,
@@ -249,7 +249,7 @@
     "luck": 5,
     "move": 6,
     "body": 8,
-    "empa": 4
+    "emp": 4
   },
   {
     "role_id": 1,
@@ -263,7 +263,7 @@
     "luck": 6,
     "move": 5,
     "body": 6,
-    "empa": 5
+    "emp": 5
   },
   {
     "role_id": 1,
@@ -277,7 +277,7 @@
     "luck": 5,
     "move": 6,
     "body": 6,
-    "empa": 5
+    "emp": 5
   },
   {
     "role_id": 2,
@@ -290,134 +290,134 @@
     "will": 4,
     "luck": 8,
     "move": 7,
-    "body": 7,
-    "empa": 4
+    "body": 8,
+    "emp": 4
   },
   {
     "role_id": 2,
-    "stat_roll_id": 2,
-    "inte": 5,
-    "refl": 6,
-    "dext": 7,
-    "tech": 5,
-    "cool": 8,
-    "will": 3,
-    "luck": 8,
-    "move": 7,
-    "body": 5,
-    "empa": 5
+    "stat_roll_id": 1,
+    "inte": ,
+    "refl": ,
+    "dext": ,
+    "tech": ,
+    "cool": ,
+    "will": ,
+    "luck": ,
+    "move": ,
+    "body": ,
+    "emp":
   },
   {
     "role_id": 2,
-    "stat_roll_id": 3,
-    "inte": 5,
-    "refl": 6,
-    "dext": 8,
-    "tech": 6,
-    "cool": 6,
-    "will": 4,
-    "luck": 7,
-    "move": 6,
-    "body": 7,
-    "empa": 4
+    "stat_roll_id": 1,
+    "inte": ,
+    "refl": ,
+    "dext": ,
+    "tech": ,
+    "cool": ,
+    "will": ,
+    "luck": ,
+    "move": ,
+    "body": ,
+    "emp":
   },
   {
     "role_id": 2,
-    "stat_roll_id": 4,
-    "inte":  5,
-    "refl": 7,
-    "dext": 7,
-    "tech": 7,
-    "cool": 7,
-    "will": 5,
-    "luck": 8,
-    "move": 6,
-    "body": 5,
-    "empa": 5
+    "stat_roll_id": 1,
+    "inte": ,
+    "refl": ,
+    "dext": ,
+    "tech": ,
+    "cool": ,
+    "will": ,
+    "luck": ,
+    "move": ,
+    "body": ,
+    "emp":
   },
   {
     "role_id": 2,
-    "stat_roll_id": 5,
-    "inte": 5,
-    "refl": 8,
-    "dext": 8,
-    "tech": 5,
-    "cool": 7,
-    "will": 3,
-    "luck": 7,
-    "move": 5,
-    "body": 5,
-    "empa": 6
+    "stat_roll_id": 1,
+    "inte": ,
+    "refl": ,
+    "dext": ,
+    "tech": ,
+    "cool": ,
+    "will": ,
+    "luck": ,
+    "move": ,
+    "body": ,
+    "emp":
   },
   {
     "role_id": 2,
-    "stat_roll_id": 6,
-    "inte": 6,
-    "refl": 6,
-    "dext": 6,
-    "tech": 7,
-    "cool": 8,
-    "will": 4,
-    "luck": 7,
-    "move": 7,
-    "body": 6,
-    "empa": 6
+    "stat_roll_id": 1,
+    "inte": ,
+    "refl": ,
+    "dext": ,
+    "tech": ,
+    "cool": ,
+    "will": ,
+    "luck": ,
+    "move": ,
+    "body": ,
+    "emp":
   },
   {
     "role_id": 2,
-    "stat_roll_id": 7,
-    "inte": 6,
-    "refl": 6,
-    "dext": 6,
-    "tech": 7,
-    "cool": 6,
-    "will": 5,
-    "luck": 7,
-    "move": 7,
-    "body": 7,
-    "empa": 6
+    "stat_roll_id": 1,
+    "inte": ,
+    "refl": ,
+    "dext": ,
+    "tech": ,
+    "cool": ,
+    "will": ,
+    "luck": ,
+    "move": ,
+    "body": ,
+    "emp":
   },
   {
     "role_id": 2,
-    "stat_roll_id": 8,
-    "inte": 5,
-    "refl": 7,
-    "dext": 8,
-    "tech": 6,
-    "cool": 8,
-    "will": 4,
-    "luck": 8,
-    "move": 5,
-    "body": 7,
-    "empa": 47
+    "stat_roll_id": 1,
+    "inte": ,
+    "refl": ,
+    "dext": ,
+    "tech": ,
+    "cool": ,
+    "will": ,
+    "luck": ,
+    "move": ,
+    "body": ,
+    "emp":
   },
   {
     "role_id": 2,
-    "stat_roll_id": 9,
-    "inte": 7,
-    "refl": 6,
-    "dext": 7,
-    "tech": 7,
-    "cool": 6,
-    "will": 3,
-    "luck": 6,
-    "move": 5,
-    "body": 6,
-    "empa": 5
+    "stat_roll_id": 1,
+    "inte": ,
+    "refl": ,
+    "dext": ,
+    "tech": ,
+    "cool": ,
+    "will": ,
+    "luck": ,
+    "move": ,
+    "body": ,
+    "emp":
   },
   {
     "role_id": 2,
-    "stat_roll_id": 10,
-    "inte": 6,
-    "refl": 6,
-    "dext": 8,
-    "tech": 5,
-    "cool": 6,
-    "will": 6,
-    "luck": 5,
-    "move": 6,
-    "body": 6,
-    "empa": 5
+    "stat_roll_id": 1,
+    "inte": ,
+    "refl": ,
+    "dext": ,
+    "tech": ,
+    "cool": ,
+    "will": ,
+    "luck": ,
+    "move": ,
+    "body": ,
+    "emp":
   },
   {
     "role_id": 3,
@@ -431,7 +431,7 @@
     "luck": ,
     "move": ,
     "body": ,
-    "empa":
+    "emp":
   },
   {
     "role_id": 3,
@@ -445,7 +445,7 @@
     "luck": ,
     "move": ,
     "body": ,
-    "empa":
+    "emp":
   },
   {
     "role_id": 3,
@@ -459,7 +459,7 @@
     "luck": ,
     "move": ,
     "body": ,
-    "empa":
+    "emp":
   },
   {
     "role_id": 3,
@@ -473,7 +473,7 @@
     "luck": ,
     "move": ,
     "body": ,
-    "empa":
+    "emp":
   },
   {
     "role_id": 3,
@@ -487,7 +487,7 @@
     "luck": ,
     "move": ,
     "body": ,
-    "empa":
+    "emp":
   },
   {
     "role_id": 3,
@@ -501,7 +501,7 @@
     "luck": ,
     "move": ,
     "body": ,
-    "empa":
+    "emp":
   },
   {
     "role_id": 3,
@@ -515,7 +515,7 @@
     "luck": ,
     "move": ,
     "body": ,
-    "empa":
+    "emp":
   },
   {
     "role_id": 3,
@@ -529,7 +529,7 @@
     "luck": ,
     "move": ,
     "body": ,
-    "empa":
+    "emp":
   },
   {
     "role_id": 3,
@@ -543,7 +543,7 @@
     "luck": ,
     "move": ,
     "body": ,
-    "empa":
+    "emp":
   },
   {
     "role_id": 3,
@@ -557,7 +557,7 @@
     "luck": ,
     "move": ,
     "body": ,
-    "empa":
+    "emp":
   },
   {
     "role_id": 3,
@@ -571,7 +571,7 @@
     "luck": ,
     "move": ,
     "body": ,
-    "empa":
+    "emp":
   },
   {
     "role_id": 3,
@@ -585,6 +585,6 @@
     "luck": ,
     "move": ,
     "body": ,
-    "empa":
+    "emp":
   },
 ]
