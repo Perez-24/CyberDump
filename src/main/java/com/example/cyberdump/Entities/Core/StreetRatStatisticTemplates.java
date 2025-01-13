@@ -15,15 +15,15 @@ public class StreetRatStatisticTemplates {
     @Id
     private Integer stat_roll_id;
     private Integer inte;
-    private Integer ref;
-    private Integer dex;
+    private Integer refl;
+    private Integer dext;
     private Integer tech;
     private Integer cool;
     private Integer will;
     private Integer luck;
     private Integer move;
     private Integer body;
-    private Integer emp;
+    private Integer empa;
 
 
     public Integer getRole_id() {
@@ -50,20 +50,20 @@ public class StreetRatStatisticTemplates {
         this.inte = inte;
     }
 
-    public Integer getRef() {
-        return ref;
+    public Integer getRefl() {
+        return refl;
     }
 
-    public void setRef(Integer ref) {
-        this.ref = ref;
+    public void setRefl(Integer ref) {
+        this.refl = ref;
     }
 
-    public Integer getDex() {
-        return dex;
+    public Integer getDext() {
+        return dext;
     }
 
-    public void setDex(Integer dex) {
-        this.dex = dex;
+    public void setDext(Integer dex) {
+        this.dext = dex;
     }
 
     public Integer getTech() {
@@ -114,11 +114,11 @@ public class StreetRatStatisticTemplates {
         this.body = body;
     }
 
-    public Integer getEmp() {
-        return emp;
+    public Integer getEmpa() {
+        return empa;
     }
 
-    public void setEmp(Integer emp) {
-        this.emp = emp;
+    public void setEmpa(Integer emp) {
+        this.empa = emp;
     }
 }

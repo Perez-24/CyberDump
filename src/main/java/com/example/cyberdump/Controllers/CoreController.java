@@ -1,8 +1,10 @@
 package com.example.cyberdump.Controllers;
 
+import com.example.cyberdump.Entities.Core.CompositeKeys.StreetRatStatisticTemplateId;
 import com.example.cyberdump.Entities.Core.SkillCategories;
 import com.example.cyberdump.Entities.Core.Skills;
 import com.example.cyberdump.Entities.Core.Statistics;
+import com.example.cyberdump.Entities.Core.StreetRatStatisticTemplates;
 import com.example.cyberdump.Repository.*;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -18,12 +20,15 @@ public class CoreController {
     private final SkillsRepository skillsRepository;
     private final SkillCategoriesRepository skillCategoriesRepository;
     private final StatisticRepository statisticRepository;
+    private final StreetRatStatisticTemplateRepository streetRatStatisticTemplateRepository;
 
 
-    public CoreController(SkillsRepository skillsRepository, SkillCategoriesRepository skillCategoriesRepository, StatisticRepository statisticRepository) {
+
+    public CoreController(SkillsRepository skillsRepository, SkillCategoriesRepository skillCategoriesRepository, StatisticRepository statisticRepository, StreetRatStatisticTemplateRepository streetRatStatisticTemplateRepository) {
         this.skillsRepository = skillsRepository;
         this.skillCategoriesRepository = skillCategoriesRepository;
         this.statisticRepository = statisticRepository;
+        this.streetRatStatisticTemplateRepository = streetRatStatisticTemplateRepository;
     }
 
 
@@ -63,6 +68,13 @@ public class CoreController {
         return skillCategoriesRepository.findById(skillCategoryID);
     }
 
+    // GET Streetrat Template by role_id and stat_roll_id
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/streetRatTemplateID/{role_id}/{stat_roll_id}")
+    Optional<StreetRatStatisticTemplates> getSkillCategoryById(@PathVariable Integer role_id, @PathVariable Integer stat_roll_id) {
+        return streetRatStatisticTemplateRepository.findById(new StreetRatStatisticTemplateId(role_id,stat_roll_id));
+    }
+
     // *******************************************
     // GET ALL ENDPOINTS
     // *******************************************
@@ -89,9 +101,16 @@ public class CoreController {
     @CrossOrigin(origins = "http://127.0.0.1:5500")
     @GetMapping("/getAllSkillCategories")
     public Iterable<SkillCategories> findAllSkillCategories() {
-
         Iterable<SkillCategories> scList = this.skillCategoriesRepository.findAll();
         return scList;
+    }
+
+    // GET ALL SKILL CATEGORIES
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @GetMapping("/getAllStatisticTemplates")
+    public Iterable<StreetRatStatisticTemplates> FindAllStatisticTemplates() {
+        Iterable<StreetRatStatisticTemplates> stuffList = this.streetRatStatisticTemplateRepository.findAll();
+        return stuffList;
     }
 
     // *******************************************
@@ -136,6 +155,21 @@ public class CoreController {
         try{
             skillsRepository.saveAll(newSkills);
             return ResponseEntity.status(HttpStatus.CREATED).body("successful skill creation");
+        }
+        catch (Exception e){
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("deez nuts occurred due to "+ e.getMessage() );
+        }
+
+    }
+
+    // ADD NEW STREETRAT TEMPLATES
+    @CrossOrigin(origins = "http://127.0.0.1:5500")
+    @PostMapping(value = "/addStreetRatTemplates", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<String> newStreetratTemplates(@RequestBody List<StreetRatStatisticTemplates>  newThing) {
+        ResponseEntity response = null;
+        try{
+            streetRatStatisticTemplateRepository.saveAll(newThing);
+            return ResponseEntity.status(HttpStatus.CREATED).body("successful thing creation");
         }
         catch (Exception e){
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("deez nuts occurred due to "+ e.getMessage() );
