@@ -13,5 +13,7 @@ public class StreetRatStatisticTemplateId implements Serializable {
         this.stat_roll_id = stat_roll_id;
     }
 
+    public StreetRatStatisticTemplateId(){}
+
     // equals() and hashCode()
 }
